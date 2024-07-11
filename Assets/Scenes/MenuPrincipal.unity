@@ -837,11 +837,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1574086074}
+  m_Father: {fileID: 753779493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 172, y: -95}
+  m_AnchoredPosition: {x: -187, y: 184.18002}
   m_SizeDelta: {x: 385.46, y: 106.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424388894
@@ -1308,7 +1308,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2099069277}
-  - {fileID: 1574086074}
+  - {fileID: 424388893}
+  - {fileID: 1869428774}
   - {fileID: 1248253342}
   - {fileID: 1087475121}
   m_Father: {fileID: 1502275737}
@@ -2447,43 +2448,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548961739}
   m_CullTransparentMesh: 1
---- !u!1 &1574086073
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1574086074}
-  m_Layer: 5
-  m_Name: Conjunto Opciones Resolucion Ajustes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1574086074
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574086073}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 424388893}
-  - {fileID: 1869428774}
-  m_Father: {fileID: 753779493}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -359, y: 279.18}
-  m_SizeDelta: {x: 359.8, y: 81.71}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1599136551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,11 +2921,11 @@ RectTransform:
   - {fileID: 1786368926}
   - {fileID: 1357197975}
   - {fileID: 201493634}
-  m_Father: {fileID: 1574086074}
+  m_Father: {fileID: 753779493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 509, y: -95}
+  m_AnchoredPosition: {x: 150, y: 184.18002}
   m_SizeDelta: {x: 372.23, y: 70.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869428775
