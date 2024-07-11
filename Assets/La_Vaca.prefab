@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 7859662589471452319}
   - component: {fileID: 1114105411452131800}
   - component: {fileID: 2178258079408226649}
+  - component: {fileID: 2501127055870768419}
   m_Layer: 0
   m_Name: La_Vaca
   m_TagString: Untagged
@@ -293,3 +294,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2867804, y: 2.989497}
   m_EdgeRadius: 0
+--- !u!114 &2501127055870768419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172413973837260540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624f96362b6bdf842b0bb71759392ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabeza: {fileID: 2999680142367726360}
+  cuerpo: {fileID: 4352848211375560502}
