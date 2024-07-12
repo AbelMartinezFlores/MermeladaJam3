@@ -1627,7 +1627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &563716577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1635,17 +1635,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563716576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1224448221}
-  m_Father: {fileID: 775052365}
+  m_Father: {fileID: 2092571526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350.95996, y: 0}
+  m_AnchoredPosition: {x: 315.03992, y: 0}
   m_SizeDelta: {x: 46.79004, y: 35.31006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563716578
@@ -1692,10 +1692,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2092571525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2092571529}
+        m_TargetAssemblyTypeName: PanelIngredientes, Assembly-CSharp
+        m_MethodName: CerrarPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2123,7 +2123,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 951210015}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 101
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2148,8 +2148,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2092571526}
-  - {fileID: 1014802243}
-  - {fileID: 563716577}
   - {fileID: 1273601537}
   - {fileID: 802586869}
   - {fileID: 522013553}
@@ -3004,17 +3002,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014802242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 669088678}
-  m_Father: {fileID: 775052365}
+  m_Father: {fileID: 2092571526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -936.61, y: 0}
+  m_AnchoredPosition: {x: 315, y: 0}
   m_SizeDelta: {x: 46.79004, y: 35.31006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014802244
@@ -3073,10 +3071,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2092571525}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2092571529}
+        m_TargetAssemblyTypeName: PanelIngredientes, Assembly-CSharp
+        m_MethodName: AbrirPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5777,7 +5775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.0025024414}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.0025024414}
   m_SizeDelta: {x: 0.19995117, y: -0.48999023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088757503
@@ -5829,13 +5827,15 @@ GameObject:
   - component: {fileID: 2092571526}
   - component: {fileID: 2092571528}
   - component: {fileID: 2092571527}
+  - component: {fileID: 2092571529}
+  - component: {fileID: 2092571530}
   m_Layer: 5
   m_Name: Panel Ingredientes Juego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2092571526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5849,12 +5849,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 251537215}
+  - {fileID: 563716577}
+  - {fileID: 1014802243}
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -667.1801, y: 0}
-  m_SizeDelta: {x: -1334.35, y: 0}
+  m_AnchoredPosition: {x: -1255, y: 0}
+  m_SizeDelta: {x: -1333.35, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092571527
 MonoBehaviour:
@@ -5894,6 +5896,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092571525}
   m_CullTransparentMesh: 1
+--- !u!114 &2092571529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092571525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d77e4482f7ed9e4885283f055e3bbc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 2092571525}
+  posAbiertoX: -6.166667
+  posCerradoX: -11.60741
+  duracion: 0.2
+--- !u!95 &2092571530
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092571525}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d16f4d704233a664182bfc039c225a12, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2107589000
 GameObject:
   m_ObjectHideFlags: 0
