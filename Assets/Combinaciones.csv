@@ -1,0 +1,6 @@
+Nada,Trigo,Melón,Jamon,Guindilla,Plutonio352
+Trigo,0,1,1,0,-1
+Melón,1,0,1,-1,0
+Jamon,1,1,0,1,-1
+Guindilla,0,-1,1,0,1
+Plutonio352,-1,0,-1,1,0

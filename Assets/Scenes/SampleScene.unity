@@ -174,10 +174,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2501127055870768419, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5172413973837260540, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1651196491}
+    - targetCorrespondingSourceObject: {fileID: 5172413973837260540, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1651196490}
   m_SourcePrefab: {fileID: 100100000, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -398,6 +405,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &862543024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2999680142367726360, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
+  m_PrefabInstance: {fileID: 231664539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1089978272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4352848211375560502, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
+  m_PrefabInstance: {fileID: 231664539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1651196489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5172413973837260540, guid: be5084e603448c8499d41f1e5f0c6f12, type: 3}
+  m_PrefabInstance: {fileID: 231664539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1651196490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651196489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd73a64fdba7be439d701ca2661425d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RutaTablaCombinaciones: {fileID: 4900000, guid: 2043b12dab0333042bd8bf5843af9668, type: 3}
+--- !u!114 &1651196491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651196489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238e6f78985d25447af735fd8cf875f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabeza: {fileID: 862543024}
+  cuerpo: {fileID: 1089978272}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
