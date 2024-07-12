@@ -5,16 +5,11 @@ using UnityEngine;
 public class Vaca : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private  GameObject cabeza;
+    [SerializeField] private GameObject cabeza;
     [SerializeField] private GameObject cuerpo;
-    void Start()
-    {
-        
-    }
+    private Stack<Ingrediente> comida;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
 }
