@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd73a64fdba7be439d701ca2661425d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RutaTablaCombinaciones: {fileID: 4900000, guid: 2043b12dab0333042bd8bf5843af9668, type: 3}
+  csvCombinaciones: {fileID: 4900000, guid: b050471315439a3449a407b73bce9555, type: 3}
 --- !u!114 &1651196491
 MonoBehaviour:
   m_ObjectHideFlags: 0
