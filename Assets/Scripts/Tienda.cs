@@ -19,13 +19,25 @@ public class Tienda : MonoBehaviour
         //Recogemos los hijos con el valor i + 1 para saltarnos el objeto fondo
         for(int i=0; i<todos_ingedientes.Length ; i++)
         {
+            //Nos guardamos el gameobject y llamamos al método cargar de 'IngredienteTienda'
             todos_ingedientes[i] = zona_ingredientes.transform.GetChild(i + 1).gameObject;
             todos_ingedientes[i].GetComponent<IngredienteTienda>().cargar(compras_realizadas);
         }
     }
 
-    public void ComprarIngrediente()
+    public void comprarIngrediente(ScriptableObject ingrediente)
     {
         Debug.Log("Compras el ingrediente " + " con un precio de ");
+        compras_realizadas++;
+        //Restar el dinero//
+        actualizarTienda();
+    }
+
+    private void actualizarTienda()
+    {
+        for (int i = 0; i < todos_ingedientes.Length; i++)
+        {
+            todos_ingedientes[i].GetComponent<IngredienteTienda>().cargar(compras_realizadas);
+        }
     }
 }

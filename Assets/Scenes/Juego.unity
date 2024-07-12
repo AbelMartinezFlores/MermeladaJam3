@@ -229,7 +229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 7
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &59356316
@@ -1543,7 +1545,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 5
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &315691340
@@ -1756,11 +1760,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1778,7 +1782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 360723246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &360723246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1924,7 +1940,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 1
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &385793960
@@ -2063,11 +2081,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0, g: 0.08572531, b: 1, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2086,9 +2104,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1583864123}
-        m_TargetAssemblyTypeName: Tienda, Assembly-CSharp
-        m_MethodName: ComprarIngrediente
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2271,11 +2289,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2293,7 +2311,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 439733007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &439733007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2439,7 +2469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 1
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 3
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &474268135
@@ -2502,11 +2534,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 1}
+    m_SelectedColor: {r: 0, g: 0.038576126, b: 1, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2524,7 +2556,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 474268138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &474268138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,11 +2863,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2841,7 +2885,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 528266610}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &528266610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3764,11 +3820,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3786,7 +3842,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 689181050}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &689181050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4380,7 +4448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 8
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &802586868
@@ -5547,7 +5617,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 2
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &977145041
@@ -6354,11 +6426,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6376,7 +6448,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1110509782}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1110509782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6926,6 +7010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
   nivel_desbloqueo: 0
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
@@ -7068,11 +7154,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7090,7 +7176,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1197682468}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1197682468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7435,11 +7533,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7457,7 +7555,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1261599183}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1261599183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7902,11 +8012,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7924,7 +8034,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1340286933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1340286933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8098,11 +8220,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -8120,7 +8242,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1386017489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1386017489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8420,7 +8554,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 10
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1440196125
@@ -8864,7 +9000,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 9
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1513793202
@@ -9053,7 +9191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 6
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1579875459
@@ -9379,11 +9519,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0, a: 1}
+    m_NormalColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0.5882353}
     m_HighlightedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_SelectedColor: {r: 0, g: 1, b: 0, a: 1}
-    m_DisabledColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+    m_PressedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_SelectedColor: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 0.5882353}
+    m_DisabledColor: {r: 1, g: 0, b: 0.009498596, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -9401,7 +9541,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1587301793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019786963}
+        m_TargetAssemblyTypeName: IngredienteTienda, Assembly-CSharp
+        m_MethodName: comprar_Ingrediente
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587301793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10812,7 +10964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel_desbloqueo: 0
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 4
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1813151862
@@ -12097,6 +12251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e780dbc06380b44f912a59b38a758eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tienda: {fileID: 1583864123}
+  ingrediente: {fileID: 0}
   nivel_desbloqueo: 0
   colorActivo: {r: 0, g: 1, b: 0.028357267, a: 1}
   colorNoActivo: {r: 1, g: 0, b: 0, a: 1}
@@ -12372,7 +12528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.0025024414}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.0025024414}
   m_SizeDelta: {x: 0.19995117, y: -0.48999023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088757503
