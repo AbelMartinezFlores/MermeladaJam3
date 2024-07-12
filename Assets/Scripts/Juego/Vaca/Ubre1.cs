@@ -8,8 +8,11 @@ public class Ubre1 : MonoBehaviour
     public GameObject segmento;
     public int numSegmentos = 5;
 
+    ParticleSystem dispensador;
+
     void Start()
     {
+        dispensador = transform.Find("Emisor").GetComponent<ParticleSystem>();
         GenerarUbre();
     }
 
@@ -30,13 +33,19 @@ public class Ubre1 : MonoBehaviour
                 distancia.connectedBody = previoSegmento;
             }
             
-
-            previoSegmento = nuevoSegmento.GetComponent<Rigidbody2D>();
+            if(i == (numSegmentos - 1)) {
+                float tamanyo = nuevoSegmento.GetComponent<SpriteRenderer>().bounds.size.y;
+                float pivote = tamanyo / 4;
+                dispensador.transform.position = nuevoSegmento.transform.position + new Vector3(0,pivote*-1,0);
+                dispensador.transform.parent = nuevoSegmento.transform;
+            } else {
+                previoSegmento = nuevoSegmento.GetComponent<Rigidbody2D>();
+            }
         }
     }
 
     public void leche() {
-        Debug.Log("LECHE");
+        dispensador.Emit(1);
     }
 
     public void noLeche() {

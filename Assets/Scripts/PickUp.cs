@@ -19,6 +19,10 @@ public class PickUp : MonoBehaviour
 
     void OnMouseUp()
     {
+        separar();
+    }
+
+    public void separar() {
         Destroy(dj);
     }
 }

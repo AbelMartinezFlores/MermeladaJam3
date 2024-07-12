@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class SegmentoUbre1 : MonoBehaviour
 {
+    public float distanciaParaOrdenyar = .5f;
+    public float distanciaParaSoltar = .7f;
+
+    [System.NonSerialized]
     public GameObject conectadoArriba, conectadoAbajo;
+    [System.NonSerialized]
     public Ubre1 origen;
 
     void Start()
     {
+        origen = GetComponentInParent<Ubre1>();
         SpringJoint2D joint = GetComponent<SpringJoint2D>();
         SegmentoUbre1 segmentoSuperior = null;
 
@@ -36,10 +42,12 @@ public class SegmentoUbre1 : MonoBehaviour
         if (Input.GetMouseButton(0)) {
             if(conectadoArriba != null) {
                 float distanciaConAnterior = (conectadoArriba.transform.position - transform.position).magnitude;
-                if (distanciaConAnterior > .5f) {
-                    gameObject.GetComponentInParent<Ubre1>().leche();
+                if (distanciaConAnterior < distanciaParaOrdenyar) {
+                    origen.noLeche();
+                } else if (distanciaConAnterior < distanciaParaSoltar) {
+                    origen.leche();
                 } else {
-                    gameObject.GetComponentInParent<Ubre1>().noLeche();
+                    GetComponent<PickUp>().separar();
                 }
             }
         }
