@@ -11,25 +11,6 @@ public class Inventario : MonoBehaviour
 
     private Objeto obj;
 
-    /*public class ItemInventario: IComparable<ItemInventario>
-    {
-        public string objeto;
-        public int cantidad;
-
-        public ItemInventario(string obj, int n)
-        {
-            objeto = obj;
-            cantidad = n;
-        }
-
-        public int CompareTo(ItemInventario other)
-        {
-            return this.objeto.CompareTo(other.objeto);
-        }
-    }*/
-
-
-
     public List<Objeto> getObjetos() { return objetos; }
 
     public void QuitarObjeto(string newItem)
@@ -52,18 +33,38 @@ public class Inventario : MonoBehaviour
     private void Start()
     {
         Ingrediente i1 = ScriptableObject.CreateInstance<Ingrediente>();
-        i1.nombre = "a";
-        i1.sprite = Resources.Load<Sprite>("../../Sprites/LaVacabeza.png"); ;
-        
+        i1.nombre = "aa";
+        i1.sprite = Resources.Load<Sprite>("Sprites/LaVacabeza");
+
+        if (i1.sprite == null)
+        {
+            Debug.LogError("No se encontró el sprite 'Sprites/LaVacabeza.png'. Asegúrate de que el archivo esté en 'Assets/Resources/Sprites'.");
+            return;
+        }
+ 
+        GameObject inventarioGO = GameObject.FindGameObjectWithTag("Inventario");
+        if (inventarioGO == null)
+        {
+            Debug.LogError("No se encontró un objeto con el tag 'Inventario'.");
+            return;
+        }
+
         GameObject inventario = GameObject.Instantiate(prefabInventario, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform);
         obj = inventario.GetComponent<Objeto>();
+
+        if (obj == null)
+        {
+            Debug.LogError("No se encontró el componente 'Objeto' en el prefab de inventario.");
+            return;
+        }
+
         obj.CrearIngrediente(i1, 2);
 
         objetos.Add(obj);
 
         Ingrediente i2 = ScriptableObject.CreateInstance<Ingrediente>();
-        i2.nombre = "b";
-        i2.sprite = Resources.Load<Sprite>("../../Sprites/LaVacacuerpo.png");
+        i2.nombre = "bb";
+        i2.sprite = Resources.Load<Sprite>("Sprites/LaVacacuerpo");
         
         GameObject inventario2 = GameObject.Instantiate(prefabInventario, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform);
         obj = inventario2.GetComponent<Objeto>();
