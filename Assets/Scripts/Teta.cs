@@ -58,6 +58,8 @@ public class Teta : MonoBehaviour
 
         }
 
+        //comprobamos todas las posibilidades (debería haber hecho un buclecillo)
+
         if (IngreCombos[id1].combos[id2] == 1)
             coincidencias += 1;
         else if (IngreCombos[id1].combos[id2] == -1)
@@ -68,11 +70,13 @@ public class Teta : MonoBehaviour
             coincidencias -= 5;
         if (IngreCombos[id2].combos[id3] == 1)
             coincidencias += 1;
-        else if (IngreCombos[id1].combos[id2] == -1)
+        else if (IngreCombos[id2].combos[id3] == -1)
             coincidencias -= 5;
 
 
         //ahora a ver que hacemos para obtener los combos jijijijijijijiji
+
+
 
     }
 
