@@ -7,7 +7,7 @@ using UnityEngine;
 public class Ingrediente : ScriptableObject
 {
     public string nombre;
-    public string descripción;
+    public string descripcion;
     public int valor;
     public Sprite sprite;
 

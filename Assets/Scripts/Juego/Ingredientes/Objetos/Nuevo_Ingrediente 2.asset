@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Nuevo_Ingrediente 2
   m_EditorClassIdentifier: 
   nombre: c
-  "descripci\xF3n": 
-  valor: 0
+  descripcion: ingrediente c
+  valor: 10
   sprite: {fileID: 21300000, guid: 1ed65110cf77f374088360e56c143b7b, type: 3}

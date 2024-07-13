@@ -31,6 +31,11 @@ public class Vaca : MonoBehaviour
         textoDinero.text = dinero.ToString();
     }
 
+    public int GetDinero()
+    {
+        return dinero;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
