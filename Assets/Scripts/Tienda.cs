@@ -9,7 +9,7 @@ public class Tienda : MonoBehaviour
     [SerializeField]private int compras_realizadas = 0;
     [SerializeField]private GameObject[] todos_ingedientes;
 
-    public int dinero = 1000;
+    public int dinero = 1000; 
 
     private void Start()
     {

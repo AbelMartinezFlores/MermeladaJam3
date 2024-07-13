@@ -11,7 +11,7 @@ public class IngredienteTienda : MonoBehaviour
     [SerializeField]private int nivel_desbloqueo;
 
     private bool activo = false;
-    private bool comprable = false;
+    private bool comprable = false; 
 
     public void comprar_Ingrediente()
     {
