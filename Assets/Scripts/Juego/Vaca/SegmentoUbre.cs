@@ -27,7 +27,7 @@ public class SegmentoUbre : MonoBehaviour
         SegmentoUbre segmentoSuperior = null;
 
         float tamanyo = GetComponent<SpriteRenderer>().bounds.size.y;
-        pivote = tamanyo / 4;
+        pivote = tamanyo / 3.5f;
 
         if (joint != null) {
             if (joint.connectedBody != null) {
@@ -69,7 +69,6 @@ public class SegmentoUbre : MonoBehaviour
                 if (distanciaConAnterior >= distanciaParaSoltar) {
                     GetComponent<PickUp>().separar();
                 } else if( diferencia >= distanciaParaOrdenyar/10 && diferencia < distanciaParaOrdenyar/5 && distanciaConAnterior >= distanciaParaOrdenyar) {
-                    Debug.Log(distanciaConAnterior);
                     origen.leche();
                 } else {
                     origen.noLeche();
