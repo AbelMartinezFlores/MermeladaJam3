@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
   m_Name: IngredientePrueba6
   m_EditorClassIdentifier: 
-  nombre: 
-  descripcion: 
+  nombre: Noodles
+  descripcion: No podian faltar
   valor: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: be9d27bdcf91c2748a95561e1849c4b1, type: 3}
