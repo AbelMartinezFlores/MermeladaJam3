@@ -36,28 +36,8 @@ public class Inventario : MonoBehaviour
         i1.nombre = "aa";
         i1.sprite = Resources.Load<Sprite>("Sprites/LaVacabeza");
 
-        if (i1.sprite == null)
-        {
-            Debug.LogError("No se encontró el sprite 'Sprites/LaVacabeza.png'. Asegúrate de que el archivo esté en 'Assets/Resources/Sprites'.");
-            return;
-        }
- 
-        GameObject inventarioGO = GameObject.FindGameObjectWithTag("Inventario");
-        if (inventarioGO == null)
-        {
-            Debug.LogError("No se encontró un objeto con el tag 'Inventario'.");
-            return;
-        }
-
         GameObject inventario = GameObject.Instantiate(prefabInventario, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform);
         obj = inventario.GetComponent<Objeto>();
-
-        if (obj == null)
-        {
-            Debug.LogError("No se encontró el componente 'Objeto' en el prefab de inventario.");
-            return;
-        }
-
         obj.CrearIngrediente(i1, 2);
 
         objetos.Add(obj);
@@ -101,19 +81,15 @@ public class Inventario : MonoBehaviour
         
     }
 
-    public void MostrarObjetos()
+    /*public void MostrarObjetos()
     {
-       // ScriptableObject objetoEncontrado = new Ingrediente();
-
         for (int i = 0; i < objetos.Count; i++)
         {
             
-            /*GameObject obj = GameObject.Instantiate(prefabInventario, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform);
-            obj.GetComponent<SpriteRenderer>().sprite = objetoEncontrado.sprite;*/
 
             //Debug.Log(objetos[i].objeto + ": " + objetos[i].cantidad);
         }
-    }
+    }*/
 
 
 
