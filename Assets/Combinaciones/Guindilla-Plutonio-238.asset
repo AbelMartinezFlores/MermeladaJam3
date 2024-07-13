@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
-  m_Name: Nuevo_Ingrediente
+  m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
+  m_Name: Guindilla-Plutonio-238
   m_EditorClassIdentifier: 
-  nombre: 
-  valor: 0
+  nIngredientes: 2
+  ingrediente1: Guindilla
+  ingrediente2: Plutonio-238
+  ingrediente3: 
+  descripcion: Te cambia
+  pista: Te cambia
   sprite: {fileID: 0}

@@ -8,6 +8,7 @@ public class Tupla
     public string nombre;
     public int id;
     public List<int> combos;
+
     public Tupla(string nom,int valor, List<int> comb)
     {
         nombre = nom;
@@ -19,8 +20,10 @@ public class Tupla
 public class Teta : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private TextAsset csvCombinaciones;
+    [SerializeField] private TextAsset csvRelaciones;
+    //[SerializeField] private TextAsset csvCombos;
     private List<Tupla> IngreCombos = new List<Tupla>();
+    [SerializeField] private List<Combinacion> combolist;
 
     void Start()
     {
@@ -38,43 +41,103 @@ public class Teta : MonoBehaviour
     }
 
     //buscar los id correspondientes a los ingredientes para poder hacer busqueda directa en los arrays de combo
-    public void mezclarLeche(Ingrediente primero, Ingrediente segundo, Ingrediente tercero)
+    public void mezclarLeche(Ingrediente primero=null, Ingrediente segundo=null, Ingrediente tercero=null)
     {
+        //Debug.Log("A VER LA TUPLA DE COMBOS");
+        //Debug.Log(IngreCombos.Count);
+       
+
         int id1 = -1, id2 = -1, id3 = -1, coincidencias = 0;
-        int lecheFinal;
+       // int lecheFinal;
         for (int i = 0; i < IngreCombos.Count; i += 1)
         {
             //RECUPERAMOS LOS ID DE LOS INGREDIENTES
-            if (id1 > -1 && id2 > -1 && id3 > -1)
-            {
+           
+            
                 Tupla auxt = IngreCombos[i];
-                if (primero.nombre == auxt.nombre)
+
+            //Debug.Log("A VER LOS NOMBRES");
+            if (primero != null && id1 != -1) { }
+           // Debug.Log(primero.nombre);
+            if (segundo != null && id2 != -1) { }
+            //Debug.Log(segundo.nombre);
+            if (tercero != null  && id2 != -1) { }
+            //Debug.Log(tercero.nombre );
+           // Debug.Log(auxt.nombre);
+           // Debug.Log("--------------------------");
+            if (primero != null &&primero.nombre == auxt.nombre)
                     id1 = i;
-                else if (segundo.nombre == auxt.nombre)
+                if (segundo != null && segundo.nombre == auxt.nombre)
                     id2 = i;
-                else if (tercero.nombre == auxt.nombre)
+                if (tercero!= null && tercero.nombre == auxt.nombre)
                     id3 = i;
+            
+
+        }
+       // Debug.Log(id1);
+        //Debug.Log(id2);
+        //Debug.Log(id3);
+
+
+        //comprobamos todas las posibilidades (debería haber hecho un buclecillo)
+       // Debug.Log("cantidad de combos de el Ingrediente 1");
+        //Debug.Log(IngreCombos[id1].combos.Count);
+        if (id1>-1 && id2>-1 && IngreCombos[id1].combos[id2] == 1)
+            coincidencias += 1;
+        else if (id1 > -1 && id2 > -1 && IngreCombos[id1].combos[id2] == -1)
+            coincidencias = -5;
+        if (id1 > -1 && id3 > -1 && IngreCombos[id1].combos[id3] == 1)
+            coincidencias += 1;
+        else if (id1 > -1 && id3 > -1 && IngreCombos[id1].combos[id3] == -1)
+            coincidencias = -5;
+        if (id2 > -1 && id3 > -1 &&  IngreCombos[id2].combos[id3] == 1)
+            coincidencias += 1;
+        else if (id2 > -1 && id3 > -1 &&  IngreCombos[id2].combos[id3] == -1)
+            coincidencias = -5;
+
+        Debug.Log("A MEZCLAR");
+        Debug.Log(coincidencias);
+        //ahora a ver que hacemos para obtener los combos jijijijijijijiji
+        if (coincidencias < 0)
+        {
+            //devolver leche agria 
+            Debug.Log("LECHE MALAAAAAAAAAAAAAAAAAAAAAAAAA");
+        }
+        else if (coincidencias == 3) {
+            foreach (Combinacion combo in combolist)
+            {
+                if (primero.nombre == combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
+                {
+                    if (segundo.nombre == combo.ingrediente1 || segundo.nombre == combo.ingrediente2 || segundo.nombre == combo.ingrediente3)
+                    {
+                        if (tercero.nombre == combo.ingrediente1 || tercero.nombre == combo.ingrediente2 || tercero.nombre == combo.ingrediente3)
+                        {
+                            //devolver el combo en cuestion
+                            Debug.Log(combo.nombre);
+                        }
+                    }
+                }
+
             }
 
         }
+        else if(coincidencias <3)
+        {
+            foreach(Combinacion combo in combolist)
+            {
+                if(primero.nombre==combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
+                {
+                    if (segundo.nombre == combo.ingrediente1 || segundo.nombre == combo.ingrediente2 || segundo.nombre == combo.ingrediente3)
+                    {
+                        //devolver el combo en cuestion
+                        Debug.Log(combo.nombre);
+                    }
+                }
 
-        //comprobamos todas las posibilidades (debería haber hecho un buclecillo)
+            }
+        }
 
-        if (IngreCombos[id1].combos[id2] == 1)
-            coincidencias += 1;
-        else if (IngreCombos[id1].combos[id2] == -1)
-            coincidencias -= 5;
-        if (IngreCombos[id1].combos[id3] == 1)
-            coincidencias += 1;
-        else if (IngreCombos[id1].combos[id2] == -1)
-            coincidencias -= 5;
-        if (IngreCombos[id2].combos[id3] == 1)
-            coincidencias += 1;
-        else if (IngreCombos[id2].combos[id3] == -1)
-            coincidencias -= 5;
-
-
-        //ahora a ver que hacemos para obtener los combos jijijijijijijiji
+           
 
 
 
@@ -91,13 +154,13 @@ public class Teta : MonoBehaviour
     {
     
 
-        if (csvCombinaciones == null)
+        if (csvRelaciones == null)
         {
             Debug.Log("no hay nadaaaaa errrrooooor");
         }
 
         //SEPARAMOS LAS FILAS DEL CSV
-        string[] filas = csvCombinaciones.text.Split("\n");    
+        string[] filas = csvRelaciones.text.Split("\n");    
 
         //IGNORAMOS LA PRIMERA FILA QUE SOLO TIENE NOMBRES
         for (int i = 1; i < filas.Length; i += 1)
@@ -109,14 +172,37 @@ public class Teta : MonoBehaviour
             List<int> combinaciones=new List<int>();
 
             //A PARTIR DE LA PRIMERA CELDA (0) TODAS SON VALORAS ASI QUE CREAMOS UNA LISTA DE INTS
-            for(int j=1; j < ingres[i].Length; j++)
+           // Debug.Log("Cantidad de combos de este ingrediente");
+           // Debug.Log(ingres.Length);
+
+            for (int j=1; j < ingres.Length; j++)
             {
                 combinaciones.Add(int.Parse(ingres[j]));
             }
 
             //CREAMOS UNA TUPLA QUE GUARDA SU NOMBRE, SU ID NUMÉRICO(la columna de la tabla) Y SUS COMBINACIONES
+            Debug.Log("AÑADIMOS ELEMENTO A LA TUPLA");
             IngreCombos.Add(new Tupla(ingres[0], i-1,combinaciones));
+            Debug.Log(IngreCombos[i - 1].nombre);
+            Debug.Log(IngreCombos.Count);
 
         }
     }
+
+    /*public void leerCombos()
+    {
+
+
+        if (csvCombos == null)
+        {
+            Debug.Log("no hay nadaaaaa errrrooooor");
+        }
+
+        //SEPARAMOS LAS FILAS DEL CSV
+        string[] filas = csvRelaciones.text.Split("\n");
+
+        string[] filaParejas = filas[0].Split(",");
+        string[] filaTrios = filas[1].Split(",");
+
+    }*/
 }
