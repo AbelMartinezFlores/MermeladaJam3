@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ubre1 : MonoBehaviour
+public class Ubre : MonoBehaviour
 {
     public  Rigidbody2D gancho;
     public GameObject segmento;
     public int numSegmentos = 5;
 
     ParticleSystem dispensador;
+    bool dispensando = false;
 
     void Start()
     {
@@ -17,12 +18,12 @@ public class Ubre1 : MonoBehaviour
     }
 
     void GenerarUbre() {
-        Rigidbody2D previoSegmento = null;
+        Rigidbody2D previoSegmento = gancho;
         for(int i = 0; i < numSegmentos; i++) {
             GameObject nuevoSegmento = Instantiate(segmento);
 
             nuevoSegmento.transform.parent = transform;
-            nuevoSegmento.transform.position = transform.position;
+            nuevoSegmento.transform.position = gancho.transform.position;
             nuevoSegmento.transform.position += new Vector3(0.01f, 0, 0);
 
             SpringJoint2D conexion = nuevoSegmento.GetComponent<SpringJoint2D>();
@@ -45,10 +46,14 @@ public class Ubre1 : MonoBehaviour
     }
 
     public void leche() {
-        dispensador.Emit(1);
+        if (!dispensando) {
+            dispensador.Play();
+            dispensando = true;
+        }
     }
 
     public void noLeche() {
-
+        dispensador.Stop();
+        dispensando = false;
     }
 }
