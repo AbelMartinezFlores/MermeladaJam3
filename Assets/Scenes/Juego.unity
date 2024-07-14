@@ -2193,7 +2193,7 @@ MonoBehaviour:
   nombreIngrediente1: {fileID: 872433240}
   nombreIngrediente2: {fileID: 1437220021}
   nombreIngrediente3: {fileID: 348284586}
-  vacaInvisible: {fileID: 0}
+  vacaInvisible: {fileID: 1415863631}
   panelDescripcion: {fileID: 1921882669}
   panelPista: {fileID: 2119915573}
 --- !u!1 &294108671
