@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Melon-Jamon
   m_EditorClassIdentifier: 
   nombre: 
-  nIngredientes: 0
+  nIngredientes: 2
   ingrediente1: Melon
   ingrediente2: Jamon
   ingrediente3: 

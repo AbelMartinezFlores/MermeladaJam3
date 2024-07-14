@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Jamon-Plutonio-238
   m_EditorClassIdentifier: 
   nombre: 
-  nIngredientes: 0
+  nIngredientes: 2
   ingrediente1: Jamon
   ingrediente2: Plutonio-238
   ingrediente3: 

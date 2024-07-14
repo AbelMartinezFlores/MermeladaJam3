@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Trigo-Melon
   m_EditorClassIdentifier: 
   nombre: 
-  nIngredientes: 0
+  nIngredientes: 2
   ingrediente1: Trigo
   ingrediente2: Melon
   ingrediente3: 
