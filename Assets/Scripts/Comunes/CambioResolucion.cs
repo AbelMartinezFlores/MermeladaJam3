@@ -15,14 +15,23 @@ public class CambioResolucion : MonoBehaviour{
         //Guardamos aqui las opciones
         List<OptionData> opciones = new List<OptionData>();
 
+        //Variables auxiliares
+        int width = 0;
+        int height = 0;
+
         //Las que no son 16:9 no me gustan se van
         foreach(Resolution resolucion in resoluciones){
 
             //Los que tengan 16:9 me los guardo
             float ratio = resolucion.width / resolucion.height;
-            if(ratio == 16/9){
+
+            if(ratio == 16/9 && width != resolucion.width && resolucion.height != height){
                 opciones.Add(new OptionData(resolucion.width.ToString() + " x " + resolucion.height.ToString()));
             }
+
+            //Si no son repetidos
+            width = resolucion.width;
+            height = resolucion.height;
         }
 
         //Se cargan las resoluciones nuevas
