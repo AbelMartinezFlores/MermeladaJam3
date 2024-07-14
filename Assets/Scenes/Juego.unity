@@ -2870,8 +2870,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1726313481}
+  m_Children: []
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5450,6 +5449,7 @@ RectTransform:
   - {fileID: 1921882670}
   - {fileID: 2119915574}
   - {fileID: 1250374124}
+  - {fileID: 483751521}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9120,7 +9120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   compras_realizadas: 0
   todos_ingedientes: []
-  laVaca: {fileID: 0}
+  laVaca: {fileID: 1415863634}
   inventario: {fileID: 1479303103}
 --- !u!1 &1258908487
 GameObject:
