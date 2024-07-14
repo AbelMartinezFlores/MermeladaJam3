@@ -1098,9 +1098,9 @@ MonoBehaviour:
   cabeza: {fileID: 0}
   cuerpo: {fileID: 0}
   comida:
-  - {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
+  - {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}
   - {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
-  - {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
+  - {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
   textoDinero: {fileID: 763314475}
 --- !u!4 &159916674
 Transform:
@@ -1140,6 +1140,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d429436da3697814dbc21444c1cd9cee, type: 2}
   - {fileID: 11400000, guid: 3c8279b8e11df03498e63994f784f9bd, type: 2}
   - {fileID: 11400000, guid: 67cd537960b39c04ca077982fc9123ee, type: 2}
+  - {fileID: 11400000, guid: bd6c959c2274a654db227d47d8caf048, type: 2}
+  - {fileID: 11400000, guid: 632872935d258f8449c2739dbe69589c, type: 2}
+  - {fileID: 11400000, guid: efcd1d916a8ebc1439bf6e844ec6a8a1, type: 2}
+  - {fileID: 11400000, guid: fe317e057fcf3b84a96c777204cf55ec, type: 2}
 --- !u!1 &185903982
 GameObject:
   m_ObjectHideFlags: 0
