@@ -136,7 +136,7 @@ public class Teta : MonoBehaviour
         Debug.Log("A MEZCLAR");
         Debug.Log(coincidencias);
         //ahora a ver que hacemos para obtener los combos jijijijijijijiji
-        if (coincidencias < 0)
+        if (coincidencias <= 0)
         {
             //devolver leche agria 
             Debug.Log("LECHE MALAAAAAAAAAAAAAAAAAAAAAAAAA");
@@ -169,6 +169,7 @@ public class Teta : MonoBehaviour
             {
                 if (combo.nIngredientes < 3)
                 {
+                    
                     if (primero.nombre == combo.ingrediente1.nombre || primero.nombre == combo.ingrediente2.nombre || primero.nombre == combo.ingrediente3.nombre)
                     {
                         if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
@@ -177,6 +178,26 @@ public class Teta : MonoBehaviour
                             return combo;
                         }
                     }
+
+                    if (primero.nombre == combo.ingrediente1.nombre || primero.nombre == combo.ingrediente2.nombre || primero.nombre == combo.ingrediente3.nombre)
+                    {
+                        if (tercero.nombre == combo.ingrediente1.nombre || tercero.nombre == combo.ingrediente2.nombre || tercero.nombre == combo.ingrediente3.nombre)
+                        {
+                            Debug.Log(combo.nombre);
+                            return combo;
+                        }
+                    }
+
+                    if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
+                    {
+                        if (tercero.nombre == combo.ingrediente1.nombre || tercero.nombre == combo.ingrediente2.nombre || tercero.nombre == combo.ingrediente3.nombre)
+                        {
+                            Debug.Log(combo.nombre);
+                            return combo;
+                        }
+                    }
+
+                    
                 }
             }
         }
@@ -233,20 +254,5 @@ public class Teta : MonoBehaviour
         }
     }
 
-    /*public void leerCombos()
-    {
-
-
-        if (csvCombos == null)
-        {
-            Debug.Log("no hay nadaaaaa errrrooooor");
-        }
-
-        //SEPARAMOS LAS FILAS DEL CSV
-        string[] filas = csvRelaciones.text.Split("\n");
-
-        string[] filaParejas = filas[0].Split(",");
-        string[] filaTrios = filas[1].Split(",");
-
-    }*/
+ 
 }

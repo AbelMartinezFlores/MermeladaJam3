@@ -16,8 +16,9 @@ MonoBehaviour:
   nIngredientes: 2
   ingrediente1: {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}
   ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
-  ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
+  ingrediente3: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
   descripcion: La favorita para el desayuno
   pista: Metelo en un bote y espera unos meses
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}

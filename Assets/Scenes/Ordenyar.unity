@@ -1769,6 +1769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
+  final: {fileID: 1260158330}
 --- !u!4 &1883946224
 Transform:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class Vaca : MonoBehaviour
     [SerializeField] private GameObject cabeza;
     [SerializeField] private GameObject cuerpo;
     [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
-    [SerializeField] private Combinacion lecheResultado;
+    [SerializeField] public Combinacion lecheResultado;
 
     //Lista de combinaciones para ir guardando las combinaciones desbloqueadas
     [SerializeField] public List<Combinacion> combinacionesDesbloqueadas = new List<Combinacion>();
@@ -17,13 +17,21 @@ public class Vaca : MonoBehaviour
     private Teta tet;
 
     private int dinero = 100;
+
     [SerializeField] public Text textoDinero;
+    [SerializeField] public Image cuerpoVaca;
+    [SerializeField] public Image fondoVaca;
+    [SerializeField] public List<Sprite> cuerpos;
+    [SerializeField] public List<Sprite> fondos;
+
 
     private void Start()
     {
         textoDinero.text = dinero.ToString();
         tet = GetComponent<Teta>();
         tet.leerCombinaciones();
+        
+        
     }
 
       void Awake()
@@ -86,7 +94,23 @@ public class Vaca : MonoBehaviour
             //Debug.Log(comida.Count);
             lecheResultado=tet.mezclarLeche(comida[0], comida[1], comida[2]);
             comida.Clear();
-            SceneManager.LoadScene(2); //2 es escena orde�ar
+            
+            bool lotengo = false;
+            foreach(Combinacion combo in combinacionesDesbloqueadas)
+            {
+                
+                if (combo.nombre == lecheResultado.nombre)
+                {
+                    lotengo = true;
+                }
+
+            }
+            if (lotengo == false)
+                combinacionesDesbloqueadas.Add(lecheResultado);
+
+            cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
+            fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
+            // SceneManager.LoadScene(2); //2 es escena orde�ar
         }
     }
 

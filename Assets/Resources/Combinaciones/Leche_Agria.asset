@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Leche agria
   nIngredientes: 0
-  ingrediente1: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  ingrediente2: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
+  ingrediente1: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
+  ingrediente2: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
+  ingrediente3: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
   descripcion: Leche agria
   pista: "No le sent\xF3 bien a la vaca"
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
