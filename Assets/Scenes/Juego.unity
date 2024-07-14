@@ -1176,11 +1176,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cabeza: {fileID: 0}
   cuerpo: {fileID: 0}
-  combinacionesDesbloqueadas: []
   comida:
   - {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
   - {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
   - {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
+  lecheResultado: {fileID: 0}
+  combinacionesDesbloqueadas: []
   textoDinero: {fileID: 763314475}
 --- !u!4 &159916674
 Transform:
@@ -1220,6 +1221,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d429436da3697814dbc21444c1cd9cee, type: 2}
   - {fileID: 11400000, guid: 3c8279b8e11df03498e63994f784f9bd, type: 2}
   - {fileID: 11400000, guid: 67cd537960b39c04ca077982fc9123ee, type: 2}
+  lecheMala: {fileID: 0}
 --- !u!1 &185903982
 GameObject:
   m_ObjectHideFlags: 0
@@ -10274,7 +10276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10}
+  m_AnchoredPosition: {x: 21, y: 10}
   m_SizeDelta: {x: 550, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1479303101
@@ -10297,8 +10299,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 12, y: 60}
+  m_CellSize: {x: 150, y: 150}
+  m_Spacing: {x: 30, y: 60}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!222 &1479303102
