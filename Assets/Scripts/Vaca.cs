@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Vaca : MonoBehaviour
 {
-    // Start is called before the first frame update
     [SerializeField] private GameObject cabeza;
     [SerializeField] private GameObject cuerpo;
 
+    //Lista de combinaciones para ir guardando las combinaciones desbloqueadas
+    [SerializeField] public List<Combinacion> combinacionesDesbloqueadas = new List<Combinacion>();
 
-     [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
+    [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
     private Teta tet;
 
     private int dinero = 100;
@@ -85,6 +86,17 @@ public class Vaca : MonoBehaviour
             comida.Clear();
         }
     }
+
+    //Devuelve las combinaciones desbloqueadas
+    public List<Combinacion> ObtenerCombinaciones(){
+        return(combinacionesDesbloqueadas);
+    }
+
+    //Añade una nueva combinación a la lista de combinaciones
+    public void AnyadirCombinaciones(Combinacion nuevaCombinacion){
+        combinacionesDesbloqueadas.Add(nuevaCombinacion);
+    }
+
 
 
 }
