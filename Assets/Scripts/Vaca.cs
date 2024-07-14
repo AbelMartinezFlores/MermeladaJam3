@@ -10,12 +10,10 @@ public class Vaca : MonoBehaviour
     [SerializeField] private GameObject cuerpo;
     [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
     [SerializeField] private Combinacion lecheResultado;
-  
 
     //Lista de combinaciones para ir guardando las combinaciones desbloqueadas
     [SerializeField] public List<Combinacion> combinacionesDesbloqueadas = new List<Combinacion>();
 
-    [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
     private Teta tet;
 
     private int dinero = 100;
