@@ -10,12 +10,25 @@ public class Vaca : MonoBehaviour
     [SerializeField] private GameObject cuerpo;
     private Stack<Ingrediente> comida;
 
+
+    //lista de recetas desbloqueadas
+    private List<string> recetasDesbloqueadas = new List<string>();
+
     private int dinero = 100;
     [SerializeField] private Text textoDinero;
 
     private void Start()
     {
         textoDinero.text = dinero.ToString();
+
+        recetasDesbloqueadas.Add("Leche mermelada");
+        DontDestroyOnLoad(gameObject);
+    }
+
+
+    public bool TieneRecetaDesbloqueada(string nombre)
+    {
+        return recetasDesbloqueadas.Contains(nombre);
     }
 
     public void SumarDinero(int c)
