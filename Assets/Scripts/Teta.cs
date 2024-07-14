@@ -23,6 +23,7 @@ public class Teta : MonoBehaviour
     [SerializeField] private TextAsset csvRelaciones;
     private List<Tupla> IngreCombos = new List<Tupla>();
     [SerializeField] private List<Combinacion> combolist;
+    [SerializeField] private Combinacion lecheMala;
 
     void Start()
     {
@@ -40,7 +41,7 @@ public class Teta : MonoBehaviour
     }
 
     //buscar los id correspondientes a los ingredientes para poder hacer busqueda directa en los arrays de combo
-    public void mezclarLeche(Ingrediente primero, Ingrediente segundo, Ingrediente tercero)
+    public Combinacion mezclarLeche(Ingrediente primero, Ingrediente segundo, Ingrediente tercero)
     {
 
         if (primero == null)
@@ -139,6 +140,7 @@ public class Teta : MonoBehaviour
         {
             //devolver leche agria 
             Debug.Log("LECHE MALAAAAAAAAAAAAAAAAAAAAAAAAA");
+            return lecheMala;
         }
         else if (coincidencias == 3) {
             Debug.Log("LECHE TRIPLE");
@@ -152,6 +154,7 @@ public class Teta : MonoBehaviour
                         {
                             //devolver el combo en cuestion
                             Debug.Log(combo.nombre);
+                            return combo;
                         }
                     }
                 }
@@ -170,16 +173,16 @@ public class Teta : MonoBehaviour
                     {
                         if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
                         {
-
                             Debug.Log(combo.nombre);
+                            return combo;
                         }
                     }
                 }
             }
         }
 
-           
 
+        return lecheMala;
 
 
     }

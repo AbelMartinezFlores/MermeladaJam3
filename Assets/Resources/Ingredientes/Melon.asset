@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
-  m_Name: Nada
+  m_Name: Melon
   m_EditorClassIdentifier: 
-  nombre: Nada
-  "descripci\xF3n": 
+  nombre: Melon
+  descripcion: Un gigantesco y sabroso melon
   valor: 0
-  sprite: {fileID: 21300000, guid: be9d27bdcf91c2748a95561e1849c4b1, type: 3}
+  sprite: {fileID: 0}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Trigo
   m_EditorClassIdentifier: 
   nombre: Trigo
-  "descripci\xF3n": "Trigo reci\xE9n cosechado"
+  descripcion: La base de la dieta vacuna
   valor: 10
   sprite: {fileID: 0}

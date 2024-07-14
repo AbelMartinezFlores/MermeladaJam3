@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
-  m_Name: Guindilla-Plutonio-238
+  m_Name: Melon-Mermelada
   m_EditorClassIdentifier: 
-  nombre: gp
+  nombre: Mermelonda
   nIngredientes: 2
-  ingrediente1: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
-  ingrediente2: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
+  ingrediente1: {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}
+  ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  descripcion: Te cambia
-  pista: Te cambia
+  descripcion: La favorita para el desayuno
+  pista: Metelo en un bote y espera unos meses
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}

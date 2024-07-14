@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
-  m_Name: Jamon-Guindilla
+  m_Name: Jamon-Guindilla-Plutonio-238
   m_EditorClassIdentifier: 
-  nombre: jg
-  nIngredientes: 2
+  nombre: Combustible bionuclear
+  nIngredientes: 3
   ingrediente1: {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
   ingrediente2: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
-  ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  descripcion: Pica que te cagas pro esta buena
-  pista: leche fuerte y picante
+  ingrediente3: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
+  descripcion: Este poder debe usarse de forma responsable
+  pista: Un soporte, una chispa y el poder del atomo
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}

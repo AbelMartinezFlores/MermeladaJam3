@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Vaca : MonoBehaviour
 {
-    // Start is called before the first frame update
     [SerializeField] private GameObject cabeza;
     [SerializeField] private GameObject cuerpo;
+    [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
+    [SerializeField] private Combinacion lecheResultado;
 
+    //Lista de combinaciones para ir guardando las combinaciones desbloqueadas
+    [SerializeField] public List<Combinacion> combinacionesDesbloqueadas = new List<Combinacion>();
 
-     [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
     private Teta tet;
 
     private int dinero = 100;
-    [SerializeField] private Text textoDinero;
+    [SerializeField] public Text textoDinero;
 
     private void Start()
     {
@@ -81,10 +84,22 @@ public class Vaca : MonoBehaviour
                 comida.Add(aux);//cambiar null por una comida que se llame nada o algo asi
             }
             //Debug.Log(comida.Count);
-            tet.mezclarLeche(comida[0], comida[1], comida[2]);
+            lecheResultado=tet.mezclarLeche(comida[0], comida[1], comida[2]);
             comida.Clear();
+            SceneManager.LoadScene(2); //2 es escena orde�ar
         }
     }
+
+    //Devuelve las combinaciones desbloqueadas
+    public List<Combinacion> ObtenerCombinaciones(){
+        return(combinacionesDesbloqueadas);
+    }
+
+    //Añade una nueva combinación a la lista de combinaciones
+    public void AnyadirCombinaciones(Combinacion nuevaCombinacion){
+        combinacionesDesbloqueadas.Add(nuevaCombinacion);
+    }
+
 
 
 }

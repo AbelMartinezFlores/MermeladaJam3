@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
-  m_Name: Guindilla
+  m_Name: Mermelada
   m_EditorClassIdentifier: 
-  nombre: Guindilla
-  "descripci\xF3n": Guindilla superpicante del himalaya
-  valor: 100
+  nombre: Mermelada
+  descripcion: Un bote de mermelada misteriosa
+  valor: 0
   sprite: {fileID: 0}

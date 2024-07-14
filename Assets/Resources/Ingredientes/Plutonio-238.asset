@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
-  m_Name: Melon
+  m_Name: Plutonio-238
   m_EditorClassIdentifier: 
-  nombre: Melon
-  "descripci\xF3n": 
+  nombre: Plutonio-238
+  descripcion: "Alimento alt\xEDsimo en calorias"
   valor: 0
   sprite: {fileID: 0}
