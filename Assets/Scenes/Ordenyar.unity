@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 1260158331}
   - component: {fileID: 1260158330}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Panel Animacion Leche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,6 +1173,8 @@ MonoBehaviour:
   objeto: {fileID: 1219834284}
   nombre: {fileID: 316360300}
   dinero: {fileID: 661478946}
+  buenaMezcla: {fileID: 21300000, guid: a28e5237106810d4280a783e0c2c1ae1, type: 3}
+  malaMezcla: {fileID: 21300000, guid: d778200394f05524ba673c9b9e1753a1, type: 3}
 --- !u!95 &1260158331
 Animator:
   serializedVersion: 5
@@ -1767,6 +1769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
+  final: {fileID: 1260158330}
 --- !u!4 &1883946224
 Transform:
   m_ObjectHideFlags: 0

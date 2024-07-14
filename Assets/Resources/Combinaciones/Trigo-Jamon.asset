@@ -16,8 +16,9 @@ MonoBehaviour:
   nIngredientes: 2
   ingrediente1: {fileID: 11400000, guid: 77cc284170b68af41bc8636c2a3ac10a, type: 2}
   ingrediente2: {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
-  ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
+  ingrediente3: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
   descripcion: Sabe a bocadillo de verdad !
   pista: Esencial de la dieta mediterranea
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
