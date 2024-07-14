@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Jamon
   m_EditorClassIdentifier: 
   nombre: Jamon
-  "descripci\xF3n": 
+  descripcion: Pata de Jamon iberico de bellota
   valor: 0
   sprite: {fileID: 0}

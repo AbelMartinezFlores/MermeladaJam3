@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Melon-Mermelada
   m_EditorClassIdentifier: 
-  nombre: MermeladaMelonera
+  nombre: Mermelonda
   nIngredientes: 2
   ingrediente1: {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}
   ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}

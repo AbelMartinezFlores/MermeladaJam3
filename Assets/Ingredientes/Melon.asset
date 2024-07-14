@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Melon
   m_EditorClassIdentifier: 
   nombre: Melon
-  "descripci\xF3n": 
+  descripcion: Un gigantesco y sabroso melon
   valor: 0
   sprite: {fileID: 0}

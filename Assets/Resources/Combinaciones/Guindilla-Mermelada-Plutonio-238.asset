@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Guindilla-Mermelada-Plutonio-238
   m_EditorClassIdentifier: 
-  nombre: gmp
+  nombre: Jugo galactico
   nIngredientes: 3
   ingrediente1: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
   ingrediente2: {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}

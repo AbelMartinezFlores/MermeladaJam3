@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mermelada
   m_EditorClassIdentifier: 
   nombre: Mermelada
-  descripcion: 
+  descripcion: Un bote de mermelada misteriosa
   valor: 0
   sprite: {fileID: 0}

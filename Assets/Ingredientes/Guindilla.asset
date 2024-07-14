@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Guindilla
   m_EditorClassIdentifier: 
   nombre: Guindilla
-  "descripci\xF3n": Guindilla superpicante del himalaya
+  descripcion: Guindilla picante del himalaya
   valor: 100
   sprite: {fileID: 0}

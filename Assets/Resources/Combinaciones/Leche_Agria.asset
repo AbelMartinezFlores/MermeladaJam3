@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Leche_Agria
   m_EditorClassIdentifier: 
-  nombre: la
+  nombre: Leche agria
   nIngredientes: 0
   ingrediente1: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
   ingrediente2: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
