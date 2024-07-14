@@ -6,13 +6,15 @@ public class FuncionesEnciclopedia : MonoBehaviour{
     public GameObject contenidoEnciclopedia;
     public GameObject plantillaIngrediente;
 
+    public GameObject vaca;
+
 
     //Al iniciarse por el boton la enciclopedia se rellena con esta función
     void Start(){
         //Carga todos los ingredientes del fiecho de ingredientes localizado en Resources
-        Ingrediente [] ingredientes = Resources.LoadAll<Ingrediente>("Ingredientes/");
+        Receta [] recetas = Resources.LoadAll<Receta>("Recetas/");
 
-        foreach(Ingrediente ingrediente in ingredientes){
+        foreach(Receta receta in recetas){
         //Creo una copia de la plantilla que he hecho en el editor
             GameObject objetoIngrediente = Instantiate(plantillaIngrediente);
 
@@ -23,12 +25,15 @@ public class FuncionesEnciclopedia : MonoBehaviour{
                 //Si es el nombre...
                 if(parteIngrediente.name.Contains("Texto")){
                     Text nombreIngrediente = parteIngrediente.GetComponent<Text>();
-                    nombreIngrediente.text = ingrediente.nombre;
+                    nombreIngrediente.text = receta.nombre;
                 }
                 //Si es la imagen...
                 else if(parteIngrediente.name.Contains("Imagen")){
                     Image imagenIngrediente = parteIngrediente.GetComponent<Image>();
-                    imagenIngrediente.sprite = ingrediente.sprite;
+
+                    if( vaca.GetComponent<Vaca>().TieneRecetaDesbloqueada(receta.nombre) ) imagenIngrediente.sprite = receta.imagenDesbloqueada;
+                    else imagenIngrediente.sprite = receta.imagenBloqueada;
+
                 }
             }
 
