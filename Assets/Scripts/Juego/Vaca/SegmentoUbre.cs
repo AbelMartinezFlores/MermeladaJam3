@@ -64,7 +64,8 @@ public class SegmentoUbre : MonoBehaviour
             linea.SetPosition(0, transform.TransformPoint(0,-pivote,-5));
             linea.SetPosition(1, conectadoAbajo.transform.TransformPoint(0,pivote,-5));
         } else {
-            conectadoArriba.GetComponent<LineRenderer>().SetPosition(1,transform.TransformPoint(0, 0.04f, -5));
+            if (conectadoArriba) 
+                conectadoArriba.GetComponent<LineRenderer>().SetPosition(1,transform.TransformPoint(0, 0.04f, -5));
             SpringJoint2D joint = GetComponent<SpringJoint2D>();
             DistanceJoint2D distancia = GetComponent<DistanceJoint2D>();
 
