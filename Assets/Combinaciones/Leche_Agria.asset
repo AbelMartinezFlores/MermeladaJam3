@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Leche_Agria
   m_EditorClassIdentifier: 
-  nombre: 
+  nombre: la
   nIngredientes: 0
-  ingrediente1: 
-  ingrediente2: 
-  ingrediente3: 
+  ingrediente1: {fileID: 0}
+  ingrediente2: {fileID: 0}
+  ingrediente3: {fileID: 0}
   descripcion: Leche agria
   pista: "No le sent\xF3 bien a la vaca"
   sprite: {fileID: 0}
+  spriteBlocked: {fileID: 0}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Plutonio-238
   m_EditorClassIdentifier: 
   nombre: Plutonio-238
-  "descripci\xF3n": 
+  "descripci\xF3n": Radioactivo
   valor: 0
   sprite: {fileID: 0}

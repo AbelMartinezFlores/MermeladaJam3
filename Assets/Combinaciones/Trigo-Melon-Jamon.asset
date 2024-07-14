@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Trigo-Melon-Jamon
   m_EditorClassIdentifier: 
-  nombre: 
+  nombre: tmj
   nIngredientes: 3
-  ingrediente1: Trigo
-  ingrediente2: Melon
-  ingrediente3: Jamon
+  ingrediente1: {fileID: 11400000, guid: 2c8e9d0a073088d4aa5be6b3f25ecbcd, type: 2}
+  ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
+  ingrediente3: {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
   descripcion: 
   pista: 
   sprite: {fileID: 0}
+  spriteBlocked: {fileID: 0}
