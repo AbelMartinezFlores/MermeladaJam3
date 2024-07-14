@@ -11,7 +11,7 @@ public class Tanque : MonoBehaviour
         if (vacio()) {
             terminarOrdenyo();
         } else {
-            Debug.Log(litros);
+            //Debug.Log(litros);
         }
     }
 
