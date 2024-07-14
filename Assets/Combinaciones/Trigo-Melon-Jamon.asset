@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Trigo-Melon-Jamon
   m_EditorClassIdentifier: 
+  nombre: 
   nIngredientes: 0
-  ingrediente1: 
-  ingrediente2: 
-  ingrediente3: 
+  ingrediente1: Trigo
+  ingrediente2: Melon
+  ingrediente3: Jamon
   descripcion: 
   pista: 
   sprite: {fileID: 0}

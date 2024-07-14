@@ -74,26 +74,55 @@ public class Teta : MonoBehaviour
             
 
         }
-       // Debug.Log(id1);
-        //Debug.Log(id2);
-        //Debug.Log(id3);
+        Debug.Log(id1);
+         Debug.Log(id2);
+         Debug.Log(id3);
 
 
+        Debug.Log("COMBOS DE EL SEGUNDO");
+        for (int i=0; i<IngreCombos[id2].combos.Count; i++)
+        {
+
+            Debug.Log(IngreCombos[id2].combos[i]);
+        }
+
+        Debug.Log("COMBOS DEL TERCERO");
+        Debug.Log(IngreCombos[id3].combos.Count);
+        for (int i = 0; i < IngreCombos[id3].combos.Count; i++)
+        {
+
+            Debug.Log(IngreCombos[id3].combos[i]);
+        }
         //comprobamos todas las posibilidades (debería haber hecho un buclecillo)
-       // Debug.Log("cantidad de combos de el Ingrediente 1");
+        // Debug.Log("cantidad de combos de el Ingrediente 1");
         //Debug.Log(IngreCombos[id1].combos.Count);
-        if (id1>-1 && id2>-1 && IngreCombos[id1].combos[id2] == 1)
-            coincidencias += 1;
+        if (id1 > -1 && id2 > -1 && IngreCombos[id1].combos[id2] == 1)
+        {
+            coincidencias++;
+        }
         else if (id1 > -1 && id2 > -1 && IngreCombos[id1].combos[id2] == -1)
+        {
             coincidencias = -5;
+            Debug.Log("mal");
+        }
         if (id1 > -1 && id3 > -1 && IngreCombos[id1].combos[id3] == 1)
-            coincidencias += 1;
+        {
+            coincidencias++;
+        }
         else if (id1 > -1 && id3 > -1 && IngreCombos[id1].combos[id3] == -1)
+        {
             coincidencias = -5;
-        if (id2 > -1 && id3 > -1 &&  IngreCombos[id2].combos[id3] == 1)
-            coincidencias += 1;
-        else if (id2 > -1 && id3 > -1 &&  IngreCombos[id2].combos[id3] == -1)
+            Debug.Log("mal");
+        }
+        if (id2 > -1 && id3 > -1 && IngreCombos[id2].combos[id3] == 1)
+        {
+            coincidencias++;
+        }
+        else if (id2 > -1 && id3 > -1 && IngreCombos[id2].combos[id3] == -1)
+        {
             coincidencias = -5;
+            Debug.Log("mal");
+        }
 
         Debug.Log("A MEZCLAR");
         Debug.Log(coincidencias);
@@ -104,6 +133,7 @@ public class Teta : MonoBehaviour
             Debug.Log("LECHE MALAAAAAAAAAAAAAAAAAAAAAAAAA");
         }
         else if (coincidencias == 3) {
+            Debug.Log("LECHE TRIPLE");
             foreach (Combinacion combo in combolist)
             {
                 if (primero.nombre == combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
@@ -123,17 +153,20 @@ public class Teta : MonoBehaviour
         }
         else if(coincidencias <3)
         {
-            foreach(Combinacion combo in combolist)
+            Debug.Log("LECHE DOBLE");
+            foreach (Combinacion combo in combolist)
             {
-                if(primero.nombre==combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
+                if (combo.nIngredientes < 3)
                 {
-                    if (segundo.nombre == combo.ingrediente1 || segundo.nombre == combo.ingrediente2 || segundo.nombre == combo.ingrediente3)
+                    if (primero.nombre == combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
                     {
-                        //devolver el combo en cuestion
-                        Debug.Log(combo.nombre);
+                        if (segundo.nombre == combo.ingrediente1 || segundo.nombre == combo.ingrediente2 || segundo.nombre == combo.ingrediente3)
+                        {
+
+                            Debug.Log(combo.nombre);
+                        }
                     }
                 }
-
             }
         }
 
@@ -165,7 +198,7 @@ public class Teta : MonoBehaviour
         //IGNORAMOS LA PRIMERA FILA QUE SOLO TIENE NOMBRES
         for (int i = 1; i < filas.Length; i += 1)
         {
-            Debug.Log(filas[i]);
+            //Debug.Log(filas[i]);
 
             //SEPARAMOS CADA FILA POR COMAS PARA OBTENER LOS VALORES DE LAS CELDAS
             string[] ingres = filas[i].Split(",");
