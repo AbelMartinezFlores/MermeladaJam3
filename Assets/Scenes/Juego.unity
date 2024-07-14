@@ -10491,7 +10491,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d429436da3697814dbc21444c1cd9cee, type: 2}
   - {fileID: 11400000, guid: 3c8279b8e11df03498e63994f784f9bd, type: 2}
   - {fileID: 11400000, guid: 67cd537960b39c04ca077982fc9123ee, type: 2}
-  lecheMala: {fileID: 0}
+  lecheMala: {fileID: 11400000, guid: fcbc341410355a9479e9b71922f4b60f, type: 2}
 --- !u!114 &1415863634
 MonoBehaviour:
   m_ObjectHideFlags: 0

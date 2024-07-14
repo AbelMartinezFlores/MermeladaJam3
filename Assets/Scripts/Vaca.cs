@@ -98,6 +98,7 @@ public class Vaca : MonoBehaviour
             bool lotengo = false;
             foreach(Combinacion combo in combinacionesDesbloqueadas)
             {
+                Debug.Log(lecheResultado.nombre);
                 if (combo.nombre == lecheResultado.nombre)
                 {
                     lotengo = true;

@@ -136,7 +136,7 @@ public class Teta : MonoBehaviour
         Debug.Log("A MEZCLAR");
         Debug.Log(coincidencias);
         //ahora a ver que hacemos para obtener los combos jijijijijijijiji
-        if (coincidencias < 0)
+        if (coincidencias <= 0)
         {
             //devolver leche agria 
             Debug.Log("LECHE MALAAAAAAAAAAAAAAAAAAAAAAAAA");
