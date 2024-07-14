@@ -7,7 +7,10 @@ public class RellenarInformacion : MonoBehaviour{
     public Image imagenIngredienteSeleccionado;
     public Text descripcionIngredienteSeleccionado;
     public Text valorCombinacionSeleccionado;
-    public Text nombreIngredienteSeleccioando;
+    public Text nombreCombinacionSeleccioando;
+    public Text nombreIngrediente1;
+    public Text nombreIngrediente2;
+    public Text nombreIngrediente3;
     public GameObject vacaInvisible;
     public GameObject panelDescripcion;
     public GameObject panelPista;
@@ -59,7 +62,10 @@ public class RellenarInformacion : MonoBehaviour{
                     imagenIngredienteSeleccionado.sprite = combinaciones[i].sprite;
                     descripcionIngredienteSeleccionado.text = combinaciones[i].descripcion;
                     valorCombinacionSeleccionado.text = valorTotal.ToString();
-                    nombreIngredienteSeleccioando.text = combinaciones[i].nombre;
+                    nombreCombinacionSeleccioando.text = combinaciones[i].nombre;
+                    nombreIngrediente1.text = combinaciones[i].ingrediente1.nombre;
+                    nombreIngrediente2.text = combinaciones[i].ingrediente2.nombre;
+                    nombreIngrediente3.text = combinaciones[i].ingrediente3.nombre;
 
                     //Activamos el panel informacion
                     panelDescripcion.SetActive(true);

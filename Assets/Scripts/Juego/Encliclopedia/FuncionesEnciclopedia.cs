@@ -8,7 +8,13 @@ public class FuncionesEnciclopedia : MonoBehaviour{
     public GameObject vacaInvisible;
 
     //Al iniciarse por el boton la enciclopedia se rellena con esta función
-    void Start(){
+    void OnEnable(){
+
+        //Elimina todas las combinaciones anteriores
+        for(int i = 0; i < contenidoEnciclopedia.transform.childCount; i++){
+            Destroy(contenidoEnciclopedia.transform.GetChild(i).gameObject);
+        }
+
         //Carga todas las combinaciones del fichero de combinaciones localizado en Resources
         Combinacion [] combinaciones = Resources.LoadAll<Combinacion>("Combinaciones/");
 
