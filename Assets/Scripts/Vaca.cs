@@ -94,6 +94,19 @@ public class Vaca : MonoBehaviour
             //Debug.Log(comida.Count);
             lecheResultado=tet.mezclarLeche(comida[0], comida[1], comida[2]);
             comida.Clear();
+            
+            bool lotengo = false;
+            foreach(Combinacion combo in combinacionesDesbloqueadas)
+            {
+                if (combo.nombre == lecheResultado.nombre)
+                {
+                    lotengo = true;
+                }
+
+            }
+            if (lotengo == false)
+                combinacionesDesbloqueadas.Add(lecheResultado);
+
             cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
             fondoVaca.GetComponent<Image>().sprite = fondos[combinacionesDesbloqueadas.Count / 4];
             // SceneManager.LoadScene(2); //2 es escena orde�ar
