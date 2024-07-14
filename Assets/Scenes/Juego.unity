@@ -1144,84 +1144,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151112307}
   m_CullTransparentMesh: 1
---- !u!1 &159916672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 159916674}
-  - component: {fileID: 159916673}
-  - component: {fileID: 159916675}
-  m_Layer: 0
-  m_Name: VacaInvisible
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &159916673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159916672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a26766b0def98854090e72d8a3ba6ce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cabeza: {fileID: 0}
-  cuerpo: {fileID: 0}
-  comida:
-  - {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
-  - {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
-  - {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
-  lecheResultado: {fileID: 0}
-  combinacionesDesbloqueadas: []
-  textoDinero: {fileID: 0}
---- !u!4 &159916674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159916672}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.98422146, y: 0.009640709, z: 0.042021226}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &159916675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159916672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bd73a64fdba7be439d701ca2661425d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  csvRelaciones: {fileID: 4900000, guid: b050471315439a3449a407b73bce9555, type: 3}
-  combolist:
-  - {fileID: 11400000, guid: 09e814ff3775023498d0bd6e4b33fe43, type: 2}
-  - {fileID: 11400000, guid: 469e7619886a8e64ebbd2587c57ccbaf, type: 2}
-  - {fileID: 11400000, guid: 338335c9d30effb43ae0a833b22a6051, type: 2}
-  - {fileID: 11400000, guid: fd3c20074e9a1704dbe0d619d4194547, type: 2}
-  - {fileID: 11400000, guid: fcbc341410355a9479e9b71922f4b60f, type: 2}
-  - {fileID: 11400000, guid: b499ab8ab393517459fc03a1793499fb, type: 2}
-  - {fileID: 11400000, guid: d429436da3697814dbc21444c1cd9cee, type: 2}
-  - {fileID: 11400000, guid: 3c8279b8e11df03498e63994f784f9bd, type: 2}
-  - {fileID: 11400000, guid: 67cd537960b39c04ca077982fc9123ee, type: 2}
-  lecheMala: {fileID: 0}
 --- !u!1 &185903982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,7 +2170,7 @@ MonoBehaviour:
   descripcionIngredienteSeleccionado: {fileID: 1527233596}
   valorCombinacionSeleccionado: {fileID: 555656534}
   nombreIngredienteSeleccioando: {fileID: 1051996985}
-  vacaInvisible: {fileID: 159916672}
+  vacaInvisible: {fileID: 1415863631}
   panelDescripcion: {fileID: 1921882669}
   panelPista: {fileID: 2119915573}
 --- !u!1 &294108671
@@ -3369,6 +3291,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555656532}
+  m_CullTransparentMesh: 1
+--- !u!1 &557395862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557395863}
+  - component: {fileID: 557395865}
+  - component: {fileID: 557395864}
+  m_Layer: 5
+  m_Name: Imagen Fondo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &557395863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557395862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 775052365}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.3975, y: 0.042572}
+  m_SizeDelta: {x: 1924.8, y: 1080.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &557395864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557395862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3c6fa7950562f8e47b57e375d4ad7f0f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &557395865
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557395862}
   m_CullTransparentMesh: 1
 --- !u!1 &563260424
 GameObject:
@@ -5404,6 +5401,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 557395863}
   - {fileID: 2076383704}
   - {fileID: 1415863632}
   - {fileID: 2092571526}
@@ -9086,7 +9084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   compras_realizadas: 0
   todos_ingedientes: []
-  laVaca: {fileID: 159916673}
+  laVaca: {fileID: 0}
   inventario: {fileID: 1479303103}
 --- !u!1 &1258908487
 GameObject:
@@ -10141,7 +10139,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   lecheResultado: {fileID: 0}
   combinacionesDesbloqueadas: []
-  textoDinero: {fileID: 0}
+  textoDinero: {fileID: 1588843107}
 --- !u!114 &1415863635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13290,7 +13288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contenidoEnciclopedia: {fileID: 1952006522}
   plantillaCombinacion: {fileID: 290995354}
-  vacaInvisible: {fileID: 159916672}
+  vacaInvisible: {fileID: 1415863631}
 --- !u!1 &1813151862
 GameObject:
   m_ObjectHideFlags: 0
@@ -15558,4 +15556,3 @@ SceneRoots:
   - {fileID: 951210016}
   - {fileID: 775052365}
   - {fileID: 1746139966}
-  - {fileID: 159916674}
