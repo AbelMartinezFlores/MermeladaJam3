@@ -9,12 +9,15 @@ public class Ubre : MonoBehaviour
     public GameObject punta;
     public int numSegmentos = 5;
 
+    public Tanque deposito;
+
     ParticleSystem dispensador;
     bool dispensando = false;
 
     void Start()
     {
         dispensador = transform.Find("Emisor").GetComponent<ParticleSystem>();
+        dispensador.startColor = deposito.colorDeLeche();
         GenerarUbre();
     }
 
@@ -53,9 +56,10 @@ public class Ubre : MonoBehaviour
     }
 
     public void leche() {
-        if (!dispensando) {
+        if (!dispensando && !deposito.vacio()) {
             dispensador.Play();
             dispensando = true;
+            deposito.vaciar();
         }
     }
 
