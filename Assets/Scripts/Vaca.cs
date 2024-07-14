@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Vaca : MonoBehaviour
 {
     [SerializeField] private GameObject cabeza;
     [SerializeField] private GameObject cuerpo;
+    [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
+    [SerializeField] private Combinacion lecheResultado;
+  
 
     //Lista de combinaciones para ir guardando las combinaciones desbloqueadas
     [SerializeField] public List<Combinacion> combinacionesDesbloqueadas = new List<Combinacion>();
@@ -82,8 +86,9 @@ public class Vaca : MonoBehaviour
                 comida.Add(aux);//cambiar null por una comida que se llame nada o algo asi
             }
             //Debug.Log(comida.Count);
-            tet.mezclarLeche(comida[0], comida[1], comida[2]);
+            lecheResultado=tet.mezclarLeche(comida[0], comida[1], comida[2]);
             comida.Clear();
+            SceneManager.LoadScene(2); //2 es escena orde�ar
         }
     }
 
