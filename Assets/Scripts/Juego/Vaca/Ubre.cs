@@ -21,23 +21,20 @@ public class Ubre : MonoBehaviour
     void GenerarUbre() {
         Rigidbody2D previoSegmento = gancho;
         for(int i = 0; i < numSegmentos; i++) {
-
             GameObject nuevoSegmento;
-
-            if (i == (numSegmentos - 1)) {
+            if (i == (numSegmentos-1)) {
                 nuevoSegmento = Instantiate(punta);
             } else {
                 nuevoSegmento = Instantiate(segmento);
             }
+            
 
             nuevoSegmento.transform.parent = transform;
             nuevoSegmento.transform.position = gancho.transform.position;
-            nuevoSegmento.transform.position += new Vector3(0.01f, 0, 0);
-
-            nuevoSegmento.transform.localScale = Vector3.one;
+            nuevoSegmento.transform.position += new Vector3(0.01f, 0, 0.1f * (i+1));
 
             SpringJoint2D conexion = nuevoSegmento.GetComponent<SpringJoint2D>();
-            DistanceJoint2D distancia = nuevoSegmento.GetComponent<DistanceJoint2D>();            
+            DistanceJoint2D distancia = nuevoSegmento.GetComponent<DistanceJoint2D>();
 
             if (previoSegmento) {
                 conexion.connectedBody = previoSegmento;
