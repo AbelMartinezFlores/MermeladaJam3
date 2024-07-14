@@ -19,5 +19,5 @@ MonoBehaviour:
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
   descripcion: Te cambia
   pista: Te cambia
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 317bd21f2132c6c47b85f77780bbc1dc, type: 3}
   spriteBlocked: {fileID: 0}
