@@ -12,6 +12,9 @@ public class AnimacionObjetoMezclado : MonoBehaviour
     [SerializeField] private Text nombre;
     [SerializeField] private Text dinero;
 
+    [SerializeField] private Sprite buenaMezcla;
+    [SerializeField] private Sprite malaMezcla;
+
 
 
     private void Awake()
@@ -24,11 +27,14 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
     }
 
-    public void Aparecer(Sprite obj, Sprite fon, string nom, int din)
+    public void Aparecer(Sprite obj, bool bueno, string nom, int din)
     {
         nombre.text = nom;
         dinero.text = din.ToString();
-        fondo.sprite = fon;
+
+        if(bueno) fondo.sprite = buenaMezcla;
+        else fondo.sprite = malaMezcla;
+
         objeto.sprite = obj;
         
         animator.SetTrigger("Aparecer");
