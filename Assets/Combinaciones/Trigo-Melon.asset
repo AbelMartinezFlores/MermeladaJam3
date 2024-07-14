@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: tm
   nIngredientes: 2
-  ingrediente1: {fileID: 11400000, guid: 2c8e9d0a073088d4aa5be6b3f25ecbcd, type: 2}
+  ingrediente1: {fileID: 11400000, guid: 77cc284170b68af41bc8636c2a3ac10a, type: 2}
   ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
   descripcion: 

@@ -40,11 +40,18 @@ public class Teta : MonoBehaviour
     }
 
     //buscar los id correspondientes a los ingredientes para poder hacer busqueda directa en los arrays de combo
-    public void mezclarLeche(Ingrediente primero=null, Ingrediente segundo=null, Ingrediente tercero=null)
+    public void mezclarLeche(Ingrediente primero, Ingrediente segundo, Ingrediente tercero)
     {
+
+        if (primero == null)
+            primero = ScriptableObject.CreateInstance<Ingrediente>();
+        if (segundo == null)
+            segundo = ScriptableObject.CreateInstance<Ingrediente>();
+        if (tercero == null)
+            tercero = ScriptableObject.CreateInstance<Ingrediente>();
         //Debug.Log("A VER LA TUPLA DE COMBOS");
         //Debug.Log(IngreCombos.Count);
-       
+
 
         int id1 = -1, id2 = -1, id3 = -1, coincidencias = 0;
        // int lecheFinal;

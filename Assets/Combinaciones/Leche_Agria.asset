@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: la
   nIngredientes: 0
-  ingrediente1: {fileID: 0}
-  ingrediente2: {fileID: 0}
-  ingrediente3: {fileID: 0}
+  ingrediente1: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
+  ingrediente2: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
+  ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
   descripcion: Leche agria
   pista: "No le sent\xF3 bien a la vaca"
   sprite: {fileID: 0}

@@ -1075,6 +1075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 159916674}
   - component: {fileID: 159916673}
+  - component: {fileID: 159916675}
   m_Layer: 0
   m_Name: VacaInvisible
   m_TagString: Untagged
@@ -1096,6 +1097,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cabeza: {fileID: 0}
   cuerpo: {fileID: 0}
+  comida:
+  - {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
+  - {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
+  - {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   textoDinero: {fileID: 763314475}
 --- !u!4 &159916674
 Transform:
@@ -1112,6 +1117,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159916675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159916672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd73a64fdba7be439d701ca2661425d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  csvRelaciones: {fileID: 4900000, guid: b050471315439a3449a407b73bce9555, type: 3}
+  combolist:
+  - {fileID: 11400000, guid: 09e814ff3775023498d0bd6e4b33fe43, type: 2}
+  - {fileID: 11400000, guid: 469e7619886a8e64ebbd2587c57ccbaf, type: 2}
+  - {fileID: 11400000, guid: 338335c9d30effb43ae0a833b22a6051, type: 2}
+  - {fileID: 11400000, guid: fd3c20074e9a1704dbe0d619d4194547, type: 2}
+  - {fileID: 11400000, guid: fcbc341410355a9479e9b71922f4b60f, type: 2}
+  - {fileID: 11400000, guid: b499ab8ab393517459fc03a1793499fb, type: 2}
+  - {fileID: 11400000, guid: d429436da3697814dbc21444c1cd9cee, type: 2}
+  - {fileID: 11400000, guid: 3c8279b8e11df03498e63994f784f9bd, type: 2}
+  - {fileID: 11400000, guid: 67cd537960b39c04ca077982fc9123ee, type: 2}
 --- !u!1 &185903982
 GameObject:
   m_ObjectHideFlags: 0

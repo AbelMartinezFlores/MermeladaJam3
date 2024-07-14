@@ -8,9 +8,9 @@ public class Vaca : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private GameObject cabeza;
     [SerializeField] private GameObject cuerpo;
-    private Stack<Ingrediente> comida;
 
-      [SerializeField] public List<Ingrediente> comida;
+
+     [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
     private Teta tet;
 
     private int dinero = 100;
@@ -75,9 +75,9 @@ public class Vaca : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.C))
         {
-            while (comida.Count < 3)
+            while (comida.Count <= 3)
             {
-                Ingrediente aux = new Ingrediente();
+                Ingrediente aux = ScriptableObject.CreateInstance<Ingrediente>();
                 comida.Add(aux);//cambiar null por una comida que se llame nada o algo asi
             }
             //Debug.Log(comida.Count);
