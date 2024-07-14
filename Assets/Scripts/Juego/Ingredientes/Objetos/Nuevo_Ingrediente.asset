@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
-  m_Name: Nuevo_Ingrediente 0
+  m_Name: Nuevo_Ingrediente
   m_EditorClassIdentifier: 
-  nombre: Guindilla
-  descripcion: Esto es una gundilla
-  valor: 5
-  sprite: {fileID: 21300000, guid: ce283dffece2ac2468bbbe8d6c37a908, type: 3}
+  nombre: Tierra
+  descripcion: Esto es la Tierra
+  valor: 50
+  sprite: {fileID: 21300000, guid: cb87b6d224246b94693c54204db84268, type: 3}

@@ -1909,8 +1909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  nivel_desbloqueo: 4
 --- !u!114 &278649439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2845,6 +2845,7 @@ GameObject:
   - component: {fileID: 522013555}
   - component: {fileID: 522013554}
   - component: {fileID: 522013557}
+  - component: {fileID: 522013558}
   m_Layer: 5
   m_Name: "Boton Orde\xF1ar"
   m_TagString: Untagged
@@ -2863,14 +2864,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1174052067}
+  m_Children: []
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 265, y: 138.6}
-  m_SizeDelta: {x: 100, y: 80}
+  m_AnchoredPosition: {x: 255, y: 142.20001}
+  m_SizeDelta: {x: 120, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522013554
 MonoBehaviour:
@@ -2948,8 +2948,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2323ee66ef2e0c34f938f97ff05f4845, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2979,6 +2979,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numeroEscena: 2
+--- !u!114 &522013558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522013552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &529561032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,85 +3126,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529561032}
-  m_CullTransparentMesh: 1
---- !u!1 &533387712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 533387713}
-  - component: {fileID: 533387715}
-  - component: {fileID: 533387714}
-  m_Layer: 5
-  m_Name: Texto Boton Entrar Menu
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &533387713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533387712}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1579875460}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &533387714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533387712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Menu
---- !u!222 &533387715
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533387712}
   m_CullTransparentMesh: 1
 --- !u!1 &542788509
 GameObject:
@@ -4202,6 +4138,7 @@ GameObject:
   - component: {fileID: 653232739}
   - component: {fileID: 653232738}
   - component: {fileID: 653232737}
+  - component: {fileID: 653232740}
   m_Layer: 5
   m_Name: Boton Enciclopedia Leche
   m_TagString: Untagged
@@ -4220,14 +4157,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2063284479}
+  m_Children: []
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 138.59998}
-  m_SizeDelta: {x: 100, y: 80}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653232737
 MonoBehaviour:
@@ -4305,8 +4241,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 26a557fc422e59c439afa080286e0f4f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4323,6 +4259,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653232735}
   m_CullTransparentMesh: 1
+--- !u!114 &653232740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653232735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &663965338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6023,8 +5974,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: e1b026e4a18ba844ba9eb01e0e08c7a6, type: 2}
+  nivel_desbloqueo: 2
 --- !u!114 &839906049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6424,7 +6375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &865554759
 MonoBehaviour:
@@ -6692,8 +6643,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: 65ea8fc0bdbc45840acbdabd8742d512, type: 2}
+  nivel_desbloqueo: 1
 --- !u!114 &893467601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7326,7 +7277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1006084904
 MonoBehaviour:
@@ -8293,8 +8244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: 65ea8fc0bdbc45840acbdabd8742d512, type: 2}
+  nivel_desbloqueo: 1
 --- !u!114 &1147916805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8403,8 +8354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: 94c6c674da41f69408e68aa145594143, type: 2}
+  nivel_desbloqueo: 3
 --- !u!114 &1152156537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8513,8 +8464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: 2e419ddee61f19445bcf9ea45f597d97, type: 2}
+  nivel_desbloqueo: 5
 --- !u!114 &1165509784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8567,85 +8518,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165509781}
-  m_CullTransparentMesh: 1
---- !u!1 &1174052066
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1174052067}
-  - component: {fileID: 1174052069}
-  - component: {fileID: 1174052068}
-  m_Layer: 5
-  m_Name: Texto Utensilio Cuidar Vaca 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1174052067
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174052066}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 522013553}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1174052068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174052066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Orde\xF1ar"
---- !u!222 &1174052069
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174052066}
   m_CullTransparentMesh: 1
 --- !u!1 &1224448220
 GameObject:
@@ -9046,7 +8918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
+  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1284077676
 MonoBehaviour:
@@ -10763,14 +10635,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 533387713}
+  m_Children: []
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 935.00006, y: -25}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 922.81, y: -37.410004}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579875461
 MonoBehaviour:
@@ -10848,8 +10719,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a65247ecbba7d0e46a1b9fa5564fdccf, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11141,8 +11012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 0}
-  nivel_desbloqueo: 0
+  ingrediente: {fileID: 11400000, guid: e1b026e4a18ba844ba9eb01e0e08c7a6, type: 2}
+  nivel_desbloqueo: 2
 --- !u!114 &1653868680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11625,7 +11496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1674095821
 MonoBehaviour:
@@ -11916,6 +11787,7 @@ GameObject:
   - component: {fileID: 1726313484}
   - component: {fileID: 1726313483}
   - component: {fileID: 1726313482}
+  - component: {fileID: 1726313485}
   m_Layer: 5
   m_Name: Boton Entrar Tienda
   m_TagString: Untagged
@@ -11934,14 +11806,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1872909212}
+  m_Children: []
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -256, y: 138.59}
-  m_SizeDelta: {x: 100, y: 80}
+  m_AnchoredPosition: {x: -255, y: 138.59998}
+  m_SizeDelta: {x: 120, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726313482
 MonoBehaviour:
@@ -12019,8 +11890,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ed0f716ea6621a240906fe83f7050224, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12037,6 +11908,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726313480}
   m_CullTransparentMesh: 1
+--- !u!114 &1726313485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726313480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1727227259
 GameObject:
   m_ObjectHideFlags: 0
@@ -13183,85 +13069,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847301086}
   m_CullTransparentMesh: 1
---- !u!1 &1872909211
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1872909212}
-  - component: {fileID: 1872909214}
-  - component: {fileID: 1872909213}
-  m_Layer: 5
-  m_Name: Texto Boton Entrar Tienda
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1872909212
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872909211}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1726313481}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1872909213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872909211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Tienda
---- !u!222 &1872909214
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872909211}
-  m_CullTransparentMesh: 1
 --- !u!1 &1902703896
 GameObject:
   m_ObjectHideFlags: 0
@@ -13649,7 +13456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1941293082
 MonoBehaviour:
@@ -14137,85 +13944,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014797062}
-  m_CullTransparentMesh: 1
---- !u!1 &2063284478
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2063284479}
-  - component: {fileID: 2063284481}
-  - component: {fileID: 2063284480}
-  m_Layer: 5
-  m_Name: Texto Boton Enciclopedia
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2063284479
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063284478}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 653232736}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2063284480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063284478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 11
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Enciclopedia
---- !u!222 &2063284481
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063284478}
   m_CullTransparentMesh: 1
 --- !u!1 &2088757501
 GameObject:

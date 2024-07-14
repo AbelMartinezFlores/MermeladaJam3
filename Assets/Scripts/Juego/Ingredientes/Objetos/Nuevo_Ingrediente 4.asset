@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
   m_Name: Nuevo_Ingrediente 4
   m_EditorClassIdentifier: 
-  nombre: e
-  descripcion: ingrediente e
-  valor: 15
-  sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  nombre: Trigo
+  descripcion: Esto es trigo
+  valor: 25
+  sprite: {fileID: 21300000, guid: dd99c1368cb5d354590e35bed7556646, type: 3}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
   m_Name: Nuevo_Ingrediente 1
   m_EditorClassIdentifier: 
-  nombre: b
-  descripcion: ingrediente b
-  valor: 5
-  sprite: {fileID: 21300000, guid: be01c6a9a8e53c547aeca1341e8cb2bb, type: 3}
+  nombre: "Jam\xF3n"
+  descripcion: "Esto es jam\xF3n"
+  valor: 10
+  sprite: {fileID: 21300000, guid: d7b063fffd414c6459e71f86c506847f, type: 3}
