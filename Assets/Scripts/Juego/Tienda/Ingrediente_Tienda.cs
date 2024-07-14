@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IngredienteTienda : MonoBehaviour
+public class Ingrediente_Tienda : MonoBehaviour
 {
 
     [SerializeField]private Tienda tienda;

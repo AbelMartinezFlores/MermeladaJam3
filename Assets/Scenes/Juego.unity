@@ -1881,8 +1881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
-  nivel_desbloqueo: 9
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &278649439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6092,8 +6092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: e1b026e4a18ba844ba9eb01e0e08c7a6, type: 2}
-  nivel_desbloqueo: 6
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &839906049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6493,8 +6493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
-  nivel_desbloqueo: 1
+  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  nivel_desbloqueo: 0
 --- !u!114 &865554759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6761,8 +6761,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 65ea8fc0bdbc45840acbdabd8742d512, type: 2}
-  nivel_desbloqueo: 4
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &893467601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7395,7 +7395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1006084904
 MonoBehaviour:
@@ -8441,8 +8441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 65ea8fc0bdbc45840acbdabd8742d512, type: 2}
-  nivel_desbloqueo: 5
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &1147916805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8551,8 +8551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 94c6c674da41f69408e68aa145594143, type: 2}
-  nivel_desbloqueo: 8
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &1152156537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8661,8 +8661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
-  nivel_desbloqueo: 10
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &1165509784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9139,7 +9139,6 @@ MonoBehaviour:
   todos_ingedientes: []
   laVaca: {fileID: 159916673}
   inventario: {fileID: 1479303103}
-  dinero: 1000
 --- !u!1 &1273601536
 GameObject:
   m_ObjectHideFlags: 0
@@ -9316,8 +9315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 65ea8fc0bdbc45840acbdabd8742d512, type: 2}
-  nivel_desbloqueo: 3
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &1284077676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11490,8 +11489,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 94c6c674da41f69408e68aa145594143, type: 2}
-  nivel_desbloqueo: 7
+  ingrediente: {fileID: 0}
+  nivel_desbloqueo: 0
 --- !u!114 &1653868680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11974,7 +11973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1674095821
 MonoBehaviour:
@@ -13998,8 +13997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
-  nivel_desbloqueo: 2
+  ingrediente: {fileID: 11400000, guid: b1c4275cfcadc7047a5addd3fa333e71, type: 2}
+  nivel_desbloqueo: 0
 --- !u!114 &1941293082
 MonoBehaviour:
   m_ObjectHideFlags: 0

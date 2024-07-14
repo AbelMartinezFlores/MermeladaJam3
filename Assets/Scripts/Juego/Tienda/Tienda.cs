@@ -11,8 +11,6 @@ public class Tienda : MonoBehaviour
     [SerializeField]private Vaca laVaca;
     [SerializeField]private Inventario inventario;
 
-    public int dinero = 1000; 
-
     private void Start()
     {
         //Obtenemos el objeto de la zona donde se encuentran los ingredientes
@@ -25,7 +23,7 @@ public class Tienda : MonoBehaviour
         {
             //Nos guardamos el gameobject y llamamos al método cargar de 'IngredienteTienda'
             todos_ingedientes[i] = zona_ingredientes.transform.GetChild(i + 1).gameObject;
-            todos_ingedientes[i].GetComponent<IngredienteTienda>().cargar(compras_realizadas, laVaca.GetDinero());
+            todos_ingedientes[i].GetComponent<Ingrediente_Tienda>().cargar(compras_realizadas, laVaca.GetDinero());
         }
     }
 
@@ -65,7 +63,7 @@ public class Tienda : MonoBehaviour
     {
         for (int i = 0; i < todos_ingedientes.Length; i++)
         {
-            todos_ingedientes[i].GetComponent<IngredienteTienda>().cargar(compras_realizadas, laVaca.GetDinero());
+            todos_ingedientes[i].GetComponent<Ingrediente_Tienda>().cargar(compras_realizadas, laVaca.GetDinero());
         }
     }
 }
