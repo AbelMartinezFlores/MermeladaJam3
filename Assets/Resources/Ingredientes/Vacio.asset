@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
   m_Name: Vacio
   m_EditorClassIdentifier: 
-  nombre: Nada
+  nombre: Vacio
   descripcion: 
   valor: 0
   sprite: {fileID: 0}

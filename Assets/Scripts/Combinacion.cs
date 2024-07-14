@@ -17,5 +17,6 @@ public class Combinacion : ScriptableObject
     public string pista;
     public Sprite sprite;
     public Sprite spriteBlocked;
+    public Color color;
 
 }
