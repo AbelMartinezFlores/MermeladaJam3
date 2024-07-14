@@ -17,7 +17,7 @@ public class Vaca : MonoBehaviour
     private Teta tet;
 
     private int dinero = 100;
-    [SerializeField] private Text textoDinero;
+    [SerializeField] public Text textoDinero;
 
     private void Start()
     {

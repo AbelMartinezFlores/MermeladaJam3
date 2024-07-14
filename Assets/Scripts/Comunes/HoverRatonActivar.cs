@@ -27,6 +27,8 @@ public class HoverRatonActivar : MonoBehaviour
     void OnMouseExit()
     {
         panel.color = normal;
+        //cambio de mierda
+        //hola
     }
 
 }
