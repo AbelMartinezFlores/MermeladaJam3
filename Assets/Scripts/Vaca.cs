@@ -39,7 +39,8 @@ public class Vaca : MonoBehaviour
         {
             while (comida.Count < 3)
             {
-                comida.Add(null);//cambiar null por una comida que se llame nada o algo asi
+                Ingrediente aux = new Ingrediente();
+                comida.Add(aux);//cambiar null por una comida que se llame nada o algo asi
             }
             //Debug.Log(comida.Count);
             tet.mezclarLeche(comida[0], comida[1], comida[2]);

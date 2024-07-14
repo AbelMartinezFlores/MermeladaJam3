@@ -21,7 +21,6 @@ public class Teta : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private TextAsset csvRelaciones;
-    //[SerializeField] private TextAsset csvCombos;
     private List<Tupla> IngreCombos = new List<Tupla>();
     [SerializeField] private List<Combinacion> combolist;
 
@@ -65,20 +64,21 @@ public class Teta : MonoBehaviour
             //Debug.Log(tercero.nombre );
            // Debug.Log(auxt.nombre);
            // Debug.Log("--------------------------");
+
             if (primero != null &&primero.nombre == auxt.nombre)
                     id1 = i;
-                if (segundo != null && segundo.nombre == auxt.nombre)
+            if (segundo != null && segundo.nombre == auxt.nombre)
                     id2 = i;
-                if (tercero!= null && tercero.nombre == auxt.nombre)
+           if (tercero!= null && tercero.nombre == auxt.nombre)
                     id3 = i;
             
 
         }
-        Debug.Log(id1);
-         Debug.Log(id2);
-         Debug.Log(id3);
+        //Debug.Log(id1);
+        // Debug.Log(id2);
+        // Debug.Log(id3);
 
-
+        /*
         Debug.Log("COMBOS DE EL SEGUNDO");
         for (int i=0; i<IngreCombos[id2].combos.Count; i++)
         {
@@ -92,7 +92,7 @@ public class Teta : MonoBehaviour
         {
 
             Debug.Log(IngreCombos[id3].combos[i]);
-        }
+        }*/
         //comprobamos todas las posibilidades (debería haber hecho un buclecillo)
         // Debug.Log("cantidad de combos de el Ingrediente 1");
         //Debug.Log(IngreCombos[id1].combos.Count);
@@ -122,6 +122,7 @@ public class Teta : MonoBehaviour
         {
             coincidencias = -5;
             Debug.Log("mal");
+       
         }
 
         Debug.Log("A MEZCLAR");
@@ -136,11 +137,11 @@ public class Teta : MonoBehaviour
             Debug.Log("LECHE TRIPLE");
             foreach (Combinacion combo in combolist)
             {
-                if (primero.nombre == combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
+                if (primero.nombre == combo.ingrediente1.nombre || primero.nombre == combo.ingrediente2.nombre || primero.nombre == combo.ingrediente3.nombre)
                 {
-                    if (segundo.nombre == combo.ingrediente1 || segundo.nombre == combo.ingrediente2 || segundo.nombre == combo.ingrediente3)
+                    if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
                     {
-                        if (tercero.nombre == combo.ingrediente1 || tercero.nombre == combo.ingrediente2 || tercero.nombre == combo.ingrediente3)
+                        if (tercero.nombre == combo.ingrediente1.nombre || tercero.nombre == combo.ingrediente2.nombre || tercero.nombre == combo.ingrediente3.nombre)
                         {
                             //devolver el combo en cuestion
                             Debug.Log(combo.nombre);
@@ -158,9 +159,9 @@ public class Teta : MonoBehaviour
             {
                 if (combo.nIngredientes < 3)
                 {
-                    if (primero.nombre == combo.ingrediente1 || primero.nombre == combo.ingrediente2 || primero.nombre == combo.ingrediente3)
+                    if (primero.nombre == combo.ingrediente1.nombre || primero.nombre == combo.ingrediente2.nombre || primero.nombre == combo.ingrediente3.nombre)
                     {
-                        if (segundo.nombre == combo.ingrediente1 || segundo.nombre == combo.ingrediente2 || segundo.nombre == combo.ingrediente3)
+                        if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
                         {
 
                             Debug.Log(combo.nombre);
