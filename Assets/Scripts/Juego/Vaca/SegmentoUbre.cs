@@ -24,6 +24,7 @@ public class SegmentoUbre : MonoBehaviour
         linea = GetComponent<LineRenderer>();
         origen = GetComponentInParent<Ubre>();
         SpringJoint2D joint = GetComponent<SpringJoint2D>();
+        DistanceJoint2D distance = GetComponent<DistanceJoint2D>();
         SegmentoUbre segmentoSuperior = null;
 
         float tamanyo = GetComponent<SpriteRenderer>().bounds.size.y;
@@ -36,14 +37,16 @@ public class SegmentoUbre : MonoBehaviour
             }
 
             joint.anchor = new Vector2(0, pivote);
+            distance.anchor = new Vector2(0, pivote);
 
             if (segmentoSuperior != null) {
                 segmentoSuperior.conectadoAbajo = gameObject;
 
                 joint.connectedAnchor = new Vector2(0, -pivote);
+                distance.connectedAnchor = new Vector2(0, -pivote);
             } else {
                 joint.connectedAnchor = transform.parent.position;
-                GetComponent<DistanceJoint2D>().connectedAnchor = transform.parent.position;
+                distance.connectedAnchor = transform.parent.position;
             }
         }
     }
