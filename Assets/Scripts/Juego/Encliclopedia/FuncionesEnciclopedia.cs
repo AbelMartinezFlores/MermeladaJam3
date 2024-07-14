@@ -1,41 +1,40 @@
-using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FuncionesEnciclopedia : MonoBehaviour{
     public GameObject contenidoEnciclopedia;
-    public GameObject plantillaIngrediente;
+    public GameObject plantillaCombinacion;
 
 
     //Al iniciarse por el boton la enciclopedia se rellena con esta función
     void Start(){
-        //Carga todos los ingredientes del fiecho de ingredientes localizado en Resources
-        Ingrediente [] ingredientes = Resources.LoadAll<Ingrediente>("Ingredientes/");
+        //Carga todas las combinaciones del fichero de combinaciones localizado en Resources
+        Combinacion [] combinaciones = Resources.LoadAll<Combinacion>("Combinaciones/");
 
-        foreach(Ingrediente ingrediente in ingredientes){
+        foreach(Combinacion combinacion in combinaciones){
         //Creo una copia de la plantilla que he hecho en el editor
-            GameObject objetoIngrediente = Instantiate(plantillaIngrediente);
+            GameObject objetoCombinacion = Instantiate(plantillaCombinacion);
 
             //Recorro los hijos para llenar la imagen y el texto
-            for(int i = 0; i < objetoIngrediente.transform.childCount; i++){
-                GameObject parteIngrediente = objetoIngrediente.transform.GetChild(i).gameObject;
+            for(int i = 0; i < objetoCombinacion.transform.childCount; i++){
+                GameObject parteCombinacion = objetoCombinacion.transform.GetChild(i).gameObject;
                 
                 //Si es el nombre...
-                if(parteIngrediente.name.Contains("Texto")){
-                    Text nombreIngrediente = parteIngrediente.GetComponent<Text>();
-                    nombreIngrediente.text = ingrediente.nombre;
+                if(parteCombinacion.name.Contains("Texto")){
+                    Text nombreIngrediente = parteCombinacion.GetComponent<Text>();
+                    nombreIngrediente.text = combinacion.nombre;
                 }
                 //Si es la imagen...
-                else if(parteIngrediente.name.Contains("Imagen")){
-                    Image imagenIngrediente = parteIngrediente.GetComponent<Image>();
-                    imagenIngrediente.sprite = ingrediente.sprite;
+                else if(parteCombinacion.name.Contains("Imagen")){
+                    Image imagenIngrediente = parteCombinacion.GetComponent<Image>();
+                    imagenIngrediente.sprite = combinacion.sprite;
                 }
             }
 
             //Le decimos que se quede dentro del area de la enciclopedia y lo iniciamos 
             //PD: El false es importante sino la funcion te manda a parla al hijo
-            objetoIngrediente.transform.SetParent(contenidoEnciclopedia.transform, false);
-            objetoIngrediente.SetActive(true);
+            objetoCombinacion.transform.SetParent(contenidoEnciclopedia.transform, false);
+            objetoCombinacion.SetActive(true);
         }
     }
 }
