@@ -17,13 +17,21 @@ public class Vaca : MonoBehaviour
     private Teta tet;
 
     private int dinero = 100;
+
     [SerializeField] public Text textoDinero;
+    [SerializeField] public Image cuerpoVaca;
+    [SerializeField] public GameObject fondoVaca;
+    [SerializeField] public List<Sprite> cuerpos;
+    [SerializeField] public List<Sprite> fondos;
+
 
     private void Start()
     {
         textoDinero.text = dinero.ToString();
         tet = GetComponent<Teta>();
         tet.leerCombinaciones();
+        cuerpoVaca = GetComponent<Image>();
+        
     }
 
       void Awake()
@@ -86,7 +94,9 @@ public class Vaca : MonoBehaviour
             //Debug.Log(comida.Count);
             lecheResultado=tet.mezclarLeche(comida[0], comida[1], comida[2]);
             comida.Clear();
-            SceneManager.LoadScene(2); //2 es escena orde�ar
+            cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
+            fondoVaca.GetComponent<Image>().sprite = fondos[combinacionesDesbloqueadas.Count / 4];
+            // SceneManager.LoadScene(2); //2 es escena orde�ar
         }
     }
 

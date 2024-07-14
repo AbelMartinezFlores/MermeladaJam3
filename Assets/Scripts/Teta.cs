@@ -233,20 +233,5 @@ public class Teta : MonoBehaviour
         }
     }
 
-    /*public void leerCombos()
-    {
-
-
-        if (csvCombos == null)
-        {
-            Debug.Log("no hay nadaaaaa errrrooooor");
-        }
-
-        //SEPARAMOS LAS FILAS DEL CSV
-        string[] filas = csvRelaciones.text.Split("\n");
-
-        string[] filaParejas = filas[0].Split(",");
-        string[] filaTrios = filas[1].Split(",");
-
-    }*/
+ 
 }

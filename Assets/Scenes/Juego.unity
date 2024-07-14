@@ -10438,6 +10438,18 @@ MonoBehaviour:
   lecheResultado: {fileID: 0}
   combinacionesDesbloqueadas: []
   textoDinero: {fileID: 1588843107}
+  cuerpoVaca: {fileID: 0}
+  fondoVaca: {fileID: 557395862}
+  cuerpos:
+  - {fileID: 21300000, guid: 90a0a3fdb9678154680a40b99b19733c, type: 3}
+  - {fileID: 21300000, guid: 45abbe5f1d905be4f9f955df9b879690, type: 3}
+  - {fileID: 21300000, guid: f91d9230d40786a43bcb6efcd45cb23e, type: 3}
+  - {fileID: 21300000, guid: a3d4bbcc9c1e95d409f6209bf3c7f24d, type: 3}
+  fondos:
+  - {fileID: 21300000, guid: 3c6fa7950562f8e47b57e375d4ad7f0f, type: 3}
+  - {fileID: 21300000, guid: 55f29d3eda01754438be3547809c4e73, type: 3}
+  - {fileID: 21300000, guid: 33e905f9105f1b646a009a8d84ca5184, type: 3}
+  - {fileID: 21300000, guid: 8644c08ffcc84a84eb6210245096d100, type: 3}
 --- !u!114 &1415863635
 MonoBehaviour:
   m_ObjectHideFlags: 0
