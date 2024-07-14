@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4596a9db541cf3e49b8a7169421ec1fc, type: 3}
   m_Name: Nuevo_Ingrediente 3
   m_EditorClassIdentifier: 
-  nombre: d
-  descripcion: ingrediente d
-  valor: 10
-  sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  nombre: Mermelada
+  descripcion: Esto es mermelada
+  valor: 20
+  sprite: {fileID: 21300000, guid: c980522c636d5c84085fbd30c729b52c, type: 3}
