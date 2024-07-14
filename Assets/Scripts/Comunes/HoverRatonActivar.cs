@@ -28,6 +28,7 @@ public class HoverRatonActivar : MonoBehaviour
     {
         panel.color = normal;
         //cambio de mierda
+        //hola
     }
 
 }
