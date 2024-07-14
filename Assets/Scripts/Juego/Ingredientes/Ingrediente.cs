@@ -11,4 +11,10 @@ public class Ingrediente : ScriptableObject
     public int valor;
     public Sprite sprite;
 
+    public Ingrediente()
+    {
+        nombre = "Nada";
+        valor = 0;
+    }
+
 }
