@@ -20,7 +20,7 @@ public class Vaca : MonoBehaviour
 
     [SerializeField] public Text textoDinero;
     [SerializeField] public Image cuerpoVaca;
-    [SerializeField] public GameObject fondoVaca;
+    [SerializeField] public Image fondoVaca;
     [SerializeField] public List<Sprite> cuerpos;
     [SerializeField] public List<Sprite> fondos;
 
@@ -30,7 +30,7 @@ public class Vaca : MonoBehaviour
         textoDinero.text = dinero.ToString();
         tet = GetComponent<Teta>();
         tet.leerCombinaciones();
-        cuerpoVaca = GetComponent<Image>();
+        
         
     }
 
@@ -108,7 +108,7 @@ public class Vaca : MonoBehaviour
                 combinacionesDesbloqueadas.Add(lecheResultado);
 
             cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
-            fondoVaca.GetComponent<Image>().sprite = fondos[combinacionesDesbloqueadas.Count / 4];
+            fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
             // SceneManager.LoadScene(2); //2 es escena orde�ar
         }
     }

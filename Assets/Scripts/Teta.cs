@@ -177,6 +177,26 @@ public class Teta : MonoBehaviour
                             return combo;
                         }
                     }
+
+                    if (primero.nombre == combo.ingrediente1.nombre || primero.nombre == combo.ingrediente2.nombre || primero.nombre == combo.ingrediente3.nombre)
+                    {
+                        if (tercero.nombre == combo.ingrediente1.nombre || tercero.nombre == combo.ingrediente2.nombre || tercero.nombre == combo.ingrediente3.nombre)
+                        {
+                            Debug.Log(combo.nombre);
+                            return combo;
+                        }
+                    }
+
+                    if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
+                    {
+                        if (tercero.nombre == combo.ingrediente1.nombre || tercero.nombre == combo.ingrediente2.nombre || tercero.nombre == combo.ingrediente3.nombre)
+                        {
+                            Debug.Log(combo.nombre);
+                            return combo;
+                        }
+                    }
+
+
                 }
             }
         }
