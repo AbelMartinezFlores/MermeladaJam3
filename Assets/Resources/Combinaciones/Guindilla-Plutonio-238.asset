@@ -17,7 +17,7 @@ MonoBehaviour:
   ingrediente1: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
   ingrediente2: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  descripcion: Te cambia
-  pista: Te cambia
+  descripcion: Puedes beberlo o usarlo para volar un castillo
+  pista: Quema todo lo que toca
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}

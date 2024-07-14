@@ -17,7 +17,7 @@ MonoBehaviour:
   ingrediente1: {fileID: 11400000, guid: 77cc284170b68af41bc8636c2a3ac10a, type: 2}
   ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  descripcion: 
-  pista: 
+  descripcion: "Sabe raro, pero no est\xE1 del todo mal"
+  pista: Acuoso y alto en carbohidratos
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}

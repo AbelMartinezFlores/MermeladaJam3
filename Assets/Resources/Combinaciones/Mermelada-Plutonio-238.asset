@@ -17,7 +17,7 @@ MonoBehaviour:
   ingrediente1: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
   ingrediente2: {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  descripcion: 
-  pista: 
+  descripcion: Parece que falta algo para refinar la formula, pero tiene mucho valor
+  pista: Gestionar con cuidad y en un recipiente homologado
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}

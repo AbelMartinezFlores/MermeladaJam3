@@ -18,6 +18,6 @@ MonoBehaviour:
   ingrediente2: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
   descripcion: Pica que te cagas pro esta buena
-  pista: leche fuerte y picante
+  pista: salado y rojizo
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}

@@ -17,7 +17,7 @@ MonoBehaviour:
   ingrediente1: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   ingrediente2: {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
   ingrediente3: {fileID: 11400000, guid: 0584e9f0f4d4ed344867938c706d1a30, type: 2}
-  descripcion: 
-  pista: 
+  descripcion: Rico, fresco y con muchos minerales
+  pista: Dulce y salado
   sprite: {fileID: 0}
   spriteBlocked: {fileID: 0}
