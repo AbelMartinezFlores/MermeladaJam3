@@ -37,11 +37,6 @@ public class Vaca : MonoBehaviour
 
         verComida();
     }
-
-      void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
     
 
     public void SumarDinero(int c)
@@ -152,10 +147,38 @@ public class Vaca : MonoBehaviour
     public void AnyadirCombinaciones(Combinacion nuevaCombinacion){
         combinacionesDesbloqueadas.Add(nuevaCombinacion);
 
-        if (combinacionesDesbloqueadas.Count == 13) {
+        if (combinacionesDesbloqueadas.Count >= 13) {
             ganado = true;
         }
         
+    }
+
+    public void MezclarLeche()
+    {
+        while (comida.Count <= 3)
+        {
+            Ingrediente aux = ScriptableObject.CreateInstance<Ingrediente>();
+            comida.Add(aux);//cambiar null por una comida que se llame nada o algo asi
+        }
+        //Debug.Log(comida.Count);
+        lecheResultado = tet.mezclarLeche(comida[0], comida[1], comida[2]);
+       
+
+        bool lotengo = false;
+        foreach (Combinacion combo in combinacionesDesbloqueadas)
+        {
+
+            if (combo.nombre == lecheResultado.nombre)
+            {
+                lotengo = true;
+            }
+
+        }
+        if (lotengo == false)
+            combinacionesDesbloqueadas.Add(lecheResultado);
+
+        cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
+        fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
     }
 
 }
