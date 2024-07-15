@@ -22,11 +22,6 @@ public class AnimacionObjetoMezclado : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
     }
 
-    public void cambiarEscena()
-    {
-
-    }
-
     public void Aparecer(Sprite obj, bool bueno, string nom, int din)
     {
         nombre.text = nom;
