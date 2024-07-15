@@ -74,7 +74,7 @@ public class Vaca : MonoBehaviour
 
     private void verComida()
     {
-        for(int i = 0; i<3; i++)
+        for(int i = 0; i<comida.Count; i++)
         {
             if (comida[i])
             {

@@ -2689,17 +2689,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428990993}
   m_CullTransparentMesh: 1
---- !u!114 &451891511 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7489440823507602652, guid: 35c9e6e5389f65645990799f055b98f4, type: 3}
-  m_PrefabInstance: {fileID: 751580687}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202636a08fe86be42bfcc196af5f2b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &456715699
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,11 +3110,6 @@ MonoBehaviour:
   canvasTeta: {fileID: 1552858287}
   vaca: {fileID: 1415863634}
   tanque: {fileID: 1552858288}
-  ubres:
-  - {fileID: 1237670681}
-  - {fileID: 1337302767}
-  - {fileID: 1501123843}
-  - {fileID: 451891511}
 --- !u!114 &522013558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4620,7 +4604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 643.49, y: -97}
+  m_AnchoredPosition: {x: 92, y: 382}
   m_SizeDelta: {x: -1477.38, y: -948.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &708541517
@@ -8731,17 +8715,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231940067}
   m_CullTransparentMesh: 1
---- !u!114 &1237670681 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5676804043493213719, guid: 35c9e6e5389f65645990799f055b98f4, type: 3}
-  m_PrefabInstance: {fileID: 751580687}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202636a08fe86be42bfcc196af5f2b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1250374123
 GameObject:
   m_ObjectHideFlags: 0
@@ -8882,6 +8855,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 348677505297902854, guid: ce9e760c327405d45a49fa1a622503bf, type: 3}
+      propertyPath: cambio
+      value: 
+      objectReference: {fileID: 1501472706}
     - target: {fileID: 1770003519227500056, guid: ce9e760c327405d45a49fa1a622503bf, type: 3}
       propertyPath: m_Camera
       value: 
@@ -8977,7 +8954,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2787337659874150427, guid: ce9e760c327405d45a49fa1a622503bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1501472706}
   m_SourcePrefab: {fileID: 100100000, guid: ce9e760c327405d45a49fa1a622503bf, type: 3}
 --- !u!1 &1284077673
 GameObject:
@@ -9398,17 +9378,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334614145}
   m_CullTransparentMesh: 1
---- !u!114 &1337302767 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2303341136297900822, guid: 35c9e6e5389f65645990799f055b98f4, type: 3}
-  m_PrefabInstance: {fileID: 751580687}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202636a08fe86be42bfcc196af5f2b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1348524419
 GameObject:
   m_ObjectHideFlags: 0
@@ -10477,17 +10446,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493560715}
   m_CullTransparentMesh: 1
---- !u!114 &1501123843 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5383666669309037619, guid: 35c9e6e5389f65645990799f055b98f4, type: 3}
-  m_PrefabInstance: {fileID: 751580687}
+--- !u!1 &1501472702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2787337659874150427, guid: ce9e760c327405d45a49fa1a622503bf, type: 3}
+  m_PrefabInstance: {fileID: 1265006955}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &1501472706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501472702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202636a08fe86be42bfcc196af5f2b21, type: 3}
+  m_Script: {fileID: 11500000, guid: 5741e657882a225468d952cc9c03e80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numeroEscena: 2
+  mensajeError: {fileID: 1160764779}
+  tiempoMostrarError: 2
+  canvasJuego: {fileID: 775052361}
+  canvasOrdenyar: {fileID: 719644212}
+  canvasTeta: {fileID: 1552858287}
+  vaca: {fileID: 1415863634}
+  tanque: {fileID: 1552858288}
 --- !u!1 &1527233594
 GameObject:
   m_ObjectHideFlags: 0
@@ -15028,7 +15011,6 @@ MonoBehaviour:
   canvasTeta: {fileID: 0}
   vaca: {fileID: 0}
   tanque: {fileID: 0}
-  ubres: []
 --- !u!1 &2111951387
 GameObject:
   m_ObjectHideFlags: 0
