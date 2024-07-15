@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
-using UnityEditorInternal.Profiling.Memory.Experimental;
 
 public class Inventario : MonoBehaviour
 {
