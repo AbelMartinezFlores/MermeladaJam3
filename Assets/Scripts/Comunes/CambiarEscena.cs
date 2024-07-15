@@ -31,9 +31,12 @@ public class CambiarEscena : MonoBehaviour{
     public void CambiarDeEscenaCubo()
     {
 
-        int cantidadIngredientes = GameObject.Find("La_Vaca").GetComponent<Vaca>().comida.Count;
+        int cantidadIngredientes = vaca.comida.Count;
 
         if (cantidadIngredientes > 1) {
+
+            //hay que mezclar la leche
+            vaca.MezclarLeche();
 
             tanque.SetLeche(vaca.lecheResultado);
 
