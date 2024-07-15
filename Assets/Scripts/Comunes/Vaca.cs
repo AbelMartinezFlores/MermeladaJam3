@@ -147,7 +147,7 @@ public class Vaca : MonoBehaviour
     public void AnyadirCombinaciones(Combinacion nuevaCombinacion){
         combinacionesDesbloqueadas.Add(nuevaCombinacion);
 
-        if (combinacionesDesbloqueadas.Count == 13) {
+        if (combinacionesDesbloqueadas.Count >= 13) {
             ganado = true;
         }
         
@@ -162,7 +162,7 @@ public class Vaca : MonoBehaviour
         }
         //Debug.Log(comida.Count);
         lecheResultado = tet.mezclarLeche(comida[0], comida[1], comida[2]);
-        comida.Clear();
+       
 
         bool lotengo = false;
         foreach (Combinacion combo in combinacionesDesbloqueadas)
@@ -179,7 +179,6 @@ public class Vaca : MonoBehaviour
 
         cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
         fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
-        // SceneManager.LoadScene(2); //2 es escena orde�ar
     }
 
 }
