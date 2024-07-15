@@ -92,6 +92,7 @@ public class Vaca : MonoBehaviour
 
     private void Update()
     {
+        verComida();
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SumarDinero(100);

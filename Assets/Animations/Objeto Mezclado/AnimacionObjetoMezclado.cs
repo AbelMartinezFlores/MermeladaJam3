@@ -33,19 +33,19 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
         objeto.sprite = obj;
         
-        animator.SetTrigger("Aparecer");
+        //animator.SetTrigger("Aparecer");
     }
 
     public void Desaparecer()
     {
-        animator.SetTrigger("Desaparecer");
-        //animator.Play("Oculto");
+        //animator.SetTrigger("Desaparecer");
+        //animator.Play("Oculto");<
         cambio.CambiarDeEscenaLeche();
     }
 
     public void Reseteo()
     {
-        animator.SetTrigger("Desaparecer");
+        //animator.SetTrigger("Reset");
     }
 
 }

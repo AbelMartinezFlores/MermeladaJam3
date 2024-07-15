@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Vacio
   descripcion: 
-  valor: 10
+  valor: 0
   sprite: {fileID: 0}

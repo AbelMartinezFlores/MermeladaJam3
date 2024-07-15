@@ -19,5 +19,6 @@ MonoBehaviour:
   ingrediente3: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
   descripcion: "Dicen que con esto se origin\xF3 el universo"
   pista: ???
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 51ba6e2e942272c49b6cf46e6c6ddf0a, type: 3}
   spriteBlocked: {fileID: 0}
+  color: {r: 0.035777844, g: 0.050213244, b: 0.11320752, a: 1}
