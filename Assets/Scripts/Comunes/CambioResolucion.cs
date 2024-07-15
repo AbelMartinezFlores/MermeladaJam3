@@ -18,6 +18,8 @@ public class CambioResolucion : MonoBehaviour{
         //Variables auxiliares
         int width = 0;
         int height = 0;
+        int seleccionadoActual = 0;
+        int i = 0;
 
         //Las que no son 16:9 no me gustan se van
         foreach(Resolution resolucion in resoluciones){
@@ -27,6 +29,11 @@ public class CambioResolucion : MonoBehaviour{
 
             if(ratio == 16/9 && width != resolucion.width && resolucion.height != height){
                 opciones.Add(new OptionData(resolucion.width.ToString() + " x " + resolucion.height.ToString()));
+                if(resolucion.width == Screen.width && resolucion.height == Screen.height){
+                    seleccionadoActual = i;
+                }else{
+                    i++;
+                }
             }
 
             //Si no son repetidos
@@ -36,6 +43,8 @@ public class CambioResolucion : MonoBehaviour{
 
         //Se cargan las resoluciones nuevas
         dropdownResoluciones.AddOptions(opciones);
+        dropdownResoluciones.value = seleccionadoActual;
+        dropdownResoluciones.RefreshShownValue();
 
     }
 
