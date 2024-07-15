@@ -1,15 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
     public bool droppable = true;
     HingeJoint2D dj=null;
+    public bool picked = false;
 
     void OnMouseDown()
     {
-        agarrar();
+        if (!droppable) {
+            destruir();
+        } else {
+            agarrar();
+        }
+    }
+
+    public void destruir() {
+        IngredienteFisico ing = gameObject.GetComponent<IngredienteFisico>();
+        ing.abrir(false);
+        ing.inv.AgregarObjeto(ing.ing);
+        Destroy(gameObject);
     }
 
     void OnMouseUp()
@@ -17,6 +30,15 @@ public class PickUp : MonoBehaviour
         //Debug.Log("UP");
         if (droppable) {
             separar();
+        }
+    }
+
+    private void Update() {
+        if (Input.GetMouseButton(0)) {
+            picked = true;
+        }
+        if(!droppable && !Input.GetMouseButton(0) && picked == true) {
+            destruir();
         }
     }
 

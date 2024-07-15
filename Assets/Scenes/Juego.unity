@@ -9511,10 +9511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cabeza: {fileID: 1827834403}
   cuerpo: {fileID: 983201884}
-  comida:
-  - {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
-  - {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
-  - {fileID: 0}
+  comida: []
   lecheResultado: {fileID: 0}
   bocadillo: {fileID: 708541515}
   combinacionesDesbloqueadas: []
@@ -12185,7 +12182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -255.99994, y: 2.75}
+  m_AnchoredPosition: {x: -255.99991, y: 2.75}
   m_SizeDelta: {x: -661.03, y: -191.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800954085

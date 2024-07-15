@@ -64,22 +64,22 @@ public class Vaca : MonoBehaviour
     }
 
 
-    public void comer(Ingrediente alimento)
+    public bool comer(Ingrediente alimento)
     {
         int cantidad = comida.Count;
-        if (cantidad < 3)
+        if (cantidad < 3) {
             comida.Add(alimento);
-        else
-        {
+        } else {
             Debug.Log("Muuuuu no me cabe mas");
         }
 
         verComida();
+        return cantidad < 3;
     }
 
     private void verComida()
     {
-        for(int i = 0; i<3; i++)
+        for(int i = 0; i<comida.Count; i++)
         {
             if (comida[i])
             {
