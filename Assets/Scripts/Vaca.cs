@@ -10,6 +10,7 @@ public class Vaca : MonoBehaviour
     [SerializeField] private GameObject cuerpo;
     [SerializeField] public List<Ingrediente> comida =new List<Ingrediente>();
     [SerializeField] public Combinacion lecheResultado;
+    [SerializeField] private GameObject bocadillo;
 
     //Lista de combinaciones para ir guardando las combinaciones desbloqueadas
     [SerializeField] public List<Combinacion> combinacionesDesbloqueadas = new List<Combinacion>();
@@ -30,8 +31,8 @@ public class Vaca : MonoBehaviour
         textoDinero.text = dinero.ToString();
         tet = GetComponent<Teta>();
         tet.leerCombinaciones();
-        
-        
+
+        verComida();
     }
 
       void Awake()
@@ -70,7 +71,25 @@ public class Vaca : MonoBehaviour
             Debug.Log("Muuuuu no me cabe mas");
         }
 
-   
+        verComida();
+    }
+
+    private void verComida()
+    {
+        for(int i = 0; i<3; i++)
+        {
+            if (comida[i])
+            {
+                Debug.Log("hola");
+                bocadillo.transform.GetChild(i).gameObject.SetActive(true);
+                bocadillo.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = comida[i].sprite;
+            }
+            else
+            {
+                bocadillo.transform.GetChild(i).gameObject.SetActive(false);
+            }
+            
+        }
     }
 
     private void Update()

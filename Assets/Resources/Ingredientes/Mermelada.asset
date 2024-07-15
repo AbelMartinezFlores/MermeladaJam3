@@ -15,4 +15,4 @@ MonoBehaviour:
   nombre: Mermelada
   descripcion: Un bote de mermelada misteriosa
   valor: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c980522c636d5c84085fbd30c729b52c, type: 3}
