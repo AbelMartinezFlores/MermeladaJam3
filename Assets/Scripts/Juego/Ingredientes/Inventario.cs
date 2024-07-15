@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 
 public class Inventario : MonoBehaviour
 {
     public GameObject prefabInventario;
+    public GameObject ingredienteFisico;
     public List<Objeto> objetos = new List<Objeto>();
 
     private Objeto obj;
@@ -51,9 +54,27 @@ public class Inventario : MonoBehaviour
             GameObject inventario = GameObject.Instantiate(prefabInventario, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform);
             obj = inventario.GetComponent<Objeto>();
             obj.CrearIngrediente(ing, 1);
+            obj.GetComponent<Button>().onClick.AddListener(delegate { AgarrarObjeto(ing.nombre); });
 
             objetos.Add(obj);
         }
         
+    }
+
+    private Ingrediente DevolverPrimero(string item) {
+        for (int i = 0; i < objetos.Count; i++) {
+            if (objetos[i].nombre.text == item) {
+                return objetos[i].ingrediente;
+            }
+        }
+        return null;
+    }
+
+    public void AgarrarObjeto(string item) {
+        Ingrediente ing = DevolverPrimero(item);
+        if (ing) {
+            GameObject.Instantiate(ingredienteFisico, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform).GetComponent<PickUp>().agarrarManual(); ;
+            QuitarObjeto(item);
+        }
     }
 }
