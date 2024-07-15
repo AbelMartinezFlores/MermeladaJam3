@@ -34,11 +34,11 @@ public class Tienda : MonoBehaviour
         ingrediente_sel.SetActive(false);
     }
 
-    public void comprarIngrediente(Ingrediente ingrediente)
+    public void comprarIngrediente(Ingrediente ingrediente, int nivel)
     {
         //Al comprar un ingrediente restamos su valor del dinero total y actualizamos la tienda
         Debug.Log("Compras el ingrediente " + ingrediente.nombre + " con un precio de " + ingrediente.valor.ToString() );
-        compras_realizadas++;
+        if(nivel == compras_realizadas) compras_realizadas++;
         laVaca.RestarDinero(ingrediente.valor);
         inventario.AgregarObjeto(ingrediente);
         actualizarTienda();
