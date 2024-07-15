@@ -17,12 +17,15 @@ public class Vaca : MonoBehaviour
     private Teta tet;
 
     private int dinero = 100;
+    private bool ganado = false;
+    private bool mostrarPanelFinal = false;
 
     [SerializeField] public Text textoDinero;
     [SerializeField] public Image cuerpoVaca;
     [SerializeField] public Image fondoVaca;
     [SerializeField] public List<Sprite> cuerpos;
     [SerializeField] public List<Sprite> fondos;
+    [SerializeField] private GameObject panelVictoria;
 
 
     private void Start()
@@ -69,8 +72,6 @@ public class Vaca : MonoBehaviour
         {
             Debug.Log("Muuuuu no me cabe mas");
         }
-
-   
     }
 
     private void Update()
@@ -112,6 +113,13 @@ public class Vaca : MonoBehaviour
             fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
             // SceneManager.LoadScene(2); //2 es escena orde�ar
         }
+
+
+        if( mostrarPanelFinal == false && ganado == true)
+        {
+            panelVictoria.SetActive(true);
+        }
+
     }
 
     //Devuelve las combinaciones desbloqueadas
@@ -122,9 +130,12 @@ public class Vaca : MonoBehaviour
     //Añade una nueva combinación a la lista de combinaciones
     public void AnyadirCombinaciones(Combinacion nuevaCombinacion){
         combinacionesDesbloqueadas.Add(nuevaCombinacion);
+
+        if (combinacionesDesbloqueadas.Count == 13) {
+            ganado = true;
+        }
+        
     }
-
-
 
 }
 
