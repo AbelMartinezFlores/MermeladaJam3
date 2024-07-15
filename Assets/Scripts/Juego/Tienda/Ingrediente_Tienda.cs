@@ -16,7 +16,7 @@ public class Ingrediente_Tienda : MonoBehaviour
     public void comprar_Ingrediente()
     {
         ver_Ingrediente();
-        tienda.comprarIngrediente(ingrediente);
+        tienda.comprarIngrediente(ingrediente, nivel_desbloqueo);
     }
 
     public void ver_Ingrediente()
