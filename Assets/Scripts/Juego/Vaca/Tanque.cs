@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Tanque : MonoBehaviour
 {
-    float litros = 50;
+    public float litros = 5;
     public Color color = Color.white;
     public AnimacionObjetoMezclado final;
     public GameObject lecheCubo;
+    public Vaca vac;
     Combinacion leche;
     
 
     private void Start() {
         //leche = GameObject.Find("La_Vaca").GetComponent<Vaca>().lecheResultado;
+        
         //color = leche.color;
         //lecheCubo.GetComponent<SpriteRenderer>().color = color;
     }
@@ -62,6 +64,12 @@ public class Tanque : MonoBehaviour
         dinero *= leche.nIngredientes;
 
         final.Aparecer(leche.sprite,buena,leche.nombre,dinero);
+       
+    }
+
+    public void comenzarO()
+    {
+        
     }
 }
 

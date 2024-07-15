@@ -14,6 +14,7 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
     [SerializeField] private Sprite buenaMezcla;
     [SerializeField] private Sprite malaMezcla;
+    [SerializeField] public CambiarEscena cambio;
 
 
 
@@ -36,6 +37,13 @@ public class AnimacionObjetoMezclado : MonoBehaviour
     }
 
     public void Desaparecer()
+    {
+        animator.SetTrigger("Desaparecer");
+        //animator.Play("Oculto");
+        cambio.CambiarDeEscenaLeche();
+    }
+
+    public void Reseteo()
     {
         animator.SetTrigger("Desaparecer");
     }

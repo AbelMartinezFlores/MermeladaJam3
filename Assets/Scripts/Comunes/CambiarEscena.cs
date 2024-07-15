@@ -39,13 +39,25 @@ public class CambiarEscena : MonoBehaviour{
             vaca.MezclarLeche();
 
             tanque.SetLeche(vaca.lecheResultado);
+            tanque.litros = 5;
+            tanque.color = vaca.lecheResultado.color;
+            tanque.lecheCubo.GetComponent<SpriteRenderer>().color = tanque.color;
 
             canvasJuego.SetActive(false);
             canvasOrdenyar.SetActive(true);
             canvasTeta.SetActive(true);
+            tanque.final.Reseteo();
         }
         else { MostrarError(); }
 
+    }
+
+    public void CambiarDeEscenaLeche()
+    {
+        canvasJuego.SetActive(true);
+        canvasOrdenyar.SetActive(false);
+        canvasTeta.SetActive(false);
+        vaca.comida.Clear();
     }
 
     private void MostrarError()
