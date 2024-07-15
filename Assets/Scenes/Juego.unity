@@ -3017,7 +3017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numeroEscena: 2
-  mensajeError: {fileID: 1580017869}
+  mensajeError: {fileID: 0}
   tiempoMostrarError: 2
 --- !u!114 &522013558
 MonoBehaviour:
@@ -3568,7 +3568,6 @@ RectTransform:
   m_Children:
   - {fileID: 2120468702}
   - {fileID: 522013553}
-  - {fileID: 1580017870}
   m_Father: {fileID: 775052365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5897,7 +5896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
   nivel_desbloqueo: 2
 --- !u!114 &865554759
 MonoBehaviour:
@@ -6319,7 +6318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 65ea8fc0bdbc45840acbdabd8742d512, type: 2}
+  ingrediente: {fileID: 11400000, guid: 77cc284170b68af41bc8636c2a3ac10a, type: 2}
   nivel_desbloqueo: 5
 --- !u!114 &893467601
 MonoBehaviour:
@@ -7027,7 +7026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
   nivel_desbloqueo: 1
 --- !u!114 &1006084904
 MonoBehaviour:
@@ -8595,7 +8594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
   nivel_desbloqueo: 4
 --- !u!114 &1284077676
 MonoBehaviour:
@@ -9532,6 +9531,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 55f29d3eda01754438be3547809c4e73, type: 3}
   - {fileID: 21300000, guid: 33e905f9105f1b646a009a8d84ca5184, type: 3}
   - {fileID: 21300000, guid: 8644c08ffcc84a84eb6210245096d100, type: 3}
+  panelVictoria: {fileID: 0}
 --- !u!222 &1415863636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11317,7 +11317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
   nivel_desbloqueo: 0
 --- !u!114 &1674095821
 MonoBehaviour:
@@ -13076,7 +13076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tienda: {fileID: 1250374125}
-  ingrediente: {fileID: 11400000, guid: 1e429fe9379eb3949b0310bc496c98c7, type: 2}
+  ingrediente: {fileID: 11400000, guid: 773e2fb3b2067064f89aa3e9f0995f7b, type: 2}
   nivel_desbloqueo: 3
 --- !u!114 &1941293082
 MonoBehaviour:
@@ -13236,7 +13236,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1580017870}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13437,7 +13437,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1580017870}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14845,3 +14845,5 @@ SceneRoots:
   - {fileID: 2020281917}
   - {fileID: 1197292662}
   - {fileID: 259967218}
+  - {fileID: 1953690834}
+  - {fileID: 1980875552}
