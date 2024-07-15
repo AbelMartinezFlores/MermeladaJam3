@@ -88,6 +88,18 @@ public class Vaca : MonoBehaviour
             }
             
         }
+
+        switch (comida.Count) {
+            case 0: 
+                bocadillo.transform.GetChild(0).gameObject.SetActive(false);
+                goto case 1;
+            case 1:
+                bocadillo.transform.GetChild(1).gameObject.SetActive(false);
+                goto case 2;
+            case 2:
+                bocadillo.transform.GetChild(2).gameObject.SetActive(false);
+                break;
+        }
     }
 
     private void Update()
