@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Inventario : MonoBehaviour
 {
@@ -23,8 +24,8 @@ public class Inventario : MonoBehaviour
             {
                 int aux = int.Parse(objetos[i].cantidad.text) - 1;
 
+                objetos[i].UpdateIngrediente(aux);
                 if (aux <= 0) objetos.RemoveAt(i);
-                else objetos[i].UpdateIngrediente(aux);
 
                 break;
             }
@@ -72,7 +73,11 @@ public class Inventario : MonoBehaviour
     public void AgarrarObjeto(string item) {
         Ingrediente ing = DevolverPrimero(item);
         if (ing) {
-            GameObject.Instantiate(ingredienteFisico, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform).GetComponent<PickUp>().agarrarManual(); ;
+            GameObject objeto = GameObject.Instantiate(ingredienteFisico, Vector2.zero, Quaternion.identity, GameObject.FindGameObjectWithTag("Inventario").transform);
+            objeto.GetComponent<IngredienteFisico>().ing = ing;
+            objeto.GetComponent<IngredienteFisico>().inv = this;
+            objeto.GetComponent<PickUp>().agarrarManual();
+            
             QuitarObjeto(item);
         }
     }
