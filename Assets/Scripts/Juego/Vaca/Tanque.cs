@@ -12,9 +12,9 @@ public class Tanque : MonoBehaviour
     
 
     private void Start() {
-        leche = GameObject.Find("La_Vaca").GetComponent<Vaca>().lecheResultado;
-        color = leche.color;
-        lecheCubo.GetComponent<SpriteRenderer>().color = color;
+        //leche = GameObject.Find("La_Vaca").GetComponent<Vaca>().lecheResultado;
+        //color = leche.color;
+        //lecheCubo.GetComponent<SpriteRenderer>().color = color;
     }
 
     private void Update() {
@@ -23,6 +23,13 @@ public class Tanque : MonoBehaviour
         } else {
             //Debug.Log(litros);
         }
+    }
+
+    public void SetLeche(Combinacion lechecita)
+    {
+        leche = lechecita;
+        color = leche.color;
+        lecheCubo.GetComponent<SpriteRenderer>().color = color;
     }
 
     public void vaciar() {

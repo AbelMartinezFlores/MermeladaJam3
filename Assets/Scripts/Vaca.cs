@@ -37,11 +37,6 @@ public class Vaca : MonoBehaviour
 
         verComida();
     }
-
-      void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
     
 
     public void SumarDinero(int c)
