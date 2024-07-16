@@ -7299,13 +7299,15 @@ GameObject:
   m_Component:
   - component: {fileID: 1010501394}
   - component: {fileID: 1010501396}
+  - component: {fileID: 1010501398}
+  - component: {fileID: 1010501397}
   m_Layer: 5
   m_Name: Panel Animacion Leche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1010501394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7337,6 +7339,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010501393}
   m_CullTransparentMesh: 1
+--- !u!114 &1010501397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010501393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd298adfdafcca04f970be5668e2f05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fondo: {fileID: 1135475311442722759}
+  objeto: {fileID: 5075487087884996256}
+  nombre: {fileID: 3657386832565899180}
+  dinero: {fileID: 8203424132321509172}
+  buenaMezcla: {fileID: 21300000, guid: a28e5237106810d4280a783e0c2c1ae1, type: 3}
+  malaMezcla: {fileID: 21300000, guid: d778200394f05524ba673c9b9e1753a1, type: 3}
+  cambio: {fileID: 0}
+--- !u!95 &1010501398
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010501393}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 235c46ec364511848ad64848efff5507, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1014802242
 GameObject:
   m_ObjectHideFlags: 0
