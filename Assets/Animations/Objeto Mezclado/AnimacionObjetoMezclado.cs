@@ -14,17 +14,13 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
     [SerializeField] private Sprite buenaMezcla;
     [SerializeField] private Sprite malaMezcla;
+    [SerializeField] public CambiarEscena cambio;
 
 
 
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
-    }
-
-    public void cambiarEscena()
-    {
-
     }
 
     public void Aparecer(Sprite obj, bool bueno, string nom, int din)
@@ -37,12 +33,19 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
         objeto.sprite = obj;
         
-        animator.SetTrigger("Aparecer");
+        //animator.SetTrigger("Aparecer");
     }
 
     public void Desaparecer()
     {
-        animator.SetTrigger("Desaparecer");
+        //animator.SetTrigger("Desaparecer");
+        //animator.Play("Oculto");<
+        cambio.CambiarDeEscenaLeche();
+    }
+
+    public void Reseteo()
+    {
+        //animator.SetTrigger("Reset");
     }
 
 }

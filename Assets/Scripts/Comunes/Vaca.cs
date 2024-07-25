@@ -37,11 +37,6 @@ public class Vaca : MonoBehaviour
 
         verComida();
     }
-
-      void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
     
 
     public void SumarDinero(int c)
@@ -93,10 +88,23 @@ public class Vaca : MonoBehaviour
             }
             
         }
+
+        switch (comida.Count) {
+            case 0: 
+                bocadillo.transform.GetChild(0).gameObject.SetActive(false);
+                goto case 1;
+            case 1:
+                bocadillo.transform.GetChild(1).gameObject.SetActive(false);
+                goto case 2;
+            case 2:
+                bocadillo.transform.GetChild(2).gameObject.SetActive(false);
+                break;
+        }
     }
 
     private void Update()
     {
+        verComida();
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SumarDinero(100);
@@ -152,10 +160,38 @@ public class Vaca : MonoBehaviour
     public void AnyadirCombinaciones(Combinacion nuevaCombinacion){
         combinacionesDesbloqueadas.Add(nuevaCombinacion);
 
-        if (combinacionesDesbloqueadas.Count == 13) {
+        if (combinacionesDesbloqueadas.Count >= 13) {
             ganado = true;
         }
         
+    }
+
+    public void MezclarLeche()
+    {
+        while (comida.Count <= 3)
+        {
+            Ingrediente aux = ScriptableObject.CreateInstance<Ingrediente>();
+            comida.Add(aux);//cambiar null por una comida que se llame nada o algo asi
+        }
+        //Debug.Log(comida.Count);
+        lecheResultado = tet.mezclarLeche(comida[0], comida[1], comida[2]);
+       
+
+        bool lotengo = false;
+        foreach (Combinacion combo in combinacionesDesbloqueadas)
+        {
+
+            if (combo.nombre == lecheResultado.nombre)
+            {
+                lotengo = true;
+            }
+
+        }
+        if (lotengo == false)
+            combinacionesDesbloqueadas.Add(lecheResultado);
+
+        cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
+        fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
     }
 
 }

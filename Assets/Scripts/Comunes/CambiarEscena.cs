@@ -8,6 +8,13 @@ public class CambiarEscena : MonoBehaviour{
     public int numeroEscena;
     [SerializeField] private GameObject mensajeError;
     [SerializeField] private float tiempoMostrarError = 2f;
+    [SerializeField] private GameObject canvasJuego;
+
+    [SerializeField] private GameObject canvasOrdenyar;
+    [SerializeField] private GameObject canvasTeta;
+
+    [SerializeField] private Vaca vaca;
+    [SerializeField] private Tanque tanque;
 
     //1 Es la escena del juego, 0 es la escena del menu principal, 2 es la escena de ordeñar
     //Esto sirve para cambiar la escena del juego
@@ -24,12 +31,33 @@ public class CambiarEscena : MonoBehaviour{
     public void CambiarDeEscenaCubo()
     {
 
-        int cantidadIngredientes = GameObject.Find("La_Vaca").GetComponent<Vaca>().comida.Count;
+        int cantidadIngredientes = vaca.comida.Count;
 
-        if (cantidadIngredientes > 1) SceneManager.LoadScene(numeroEscena);
+        if (cantidadIngredientes > 1) {
+
+            //hay que mezclar la leche
+            vaca.MezclarLeche();
+
+            tanque.SetLeche(vaca.lecheResultado);
+            tanque.litros = 20;
+            tanque.color = vaca.lecheResultado.color;
+            tanque.lecheCubo.GetComponent<SpriteRenderer>().color = tanque.color;
+
+            canvasJuego.SetActive(false);
+            canvasOrdenyar.SetActive(true);
+            canvasTeta.SetActive(true);
+            //tanque.final.Reseteo();
+        }
         else { MostrarError(); }
 
+    }
 
+    public void CambiarDeEscenaLeche()
+    {
+        canvasJuego.SetActive(true);
+        canvasOrdenyar.SetActive(false);
+        canvasTeta.SetActive(false);
+        vaca.comida.Clear();
     }
 
     private void MostrarError()
