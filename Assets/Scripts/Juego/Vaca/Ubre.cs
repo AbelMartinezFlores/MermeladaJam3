@@ -11,14 +11,16 @@ public class Ubre : MonoBehaviour
 
     public Tanque deposito;
 
-    ParticleSystem dispensador;
+    public ParticleSystem dispensador;
     bool dispensando = false;
 
     void Start()
     {
-        dispensador = transform.Find("Emisor").GetComponent<ParticleSystem>();
-        dispensador.startColor = deposito.colorDeLeche();
         GenerarUbre();
+    }
+    void OnAwake() {
+        //dispensador = transform.Find("Emisor").GetComponent<ParticleSystem>();
+        dispensador.startColor = deposito.colorDeLeche();
     }
 
     void GenerarUbre() {

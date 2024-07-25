@@ -21,5 +21,6 @@ public class Objeto : MonoBehaviour
     public void UpdateIngrediente(int cant)
     {
         cantidad.text = cant.ToString();
+        if (cant == 0) Destroy(gameObject);
     }
 }
