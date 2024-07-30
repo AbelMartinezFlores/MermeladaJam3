@@ -16,15 +16,12 @@ public class AnimacionObjetoMezclado : MonoBehaviour
     [SerializeField] private Sprite malaMezcla;
     [SerializeField] public CambiarEscena cambio;
 
-
-
-    private void Awake()
-    {
-        animator = gameObject.GetComponent<Animator>();
-    }
+    [SerializeField] private GameObject tanque;
 
     public void Aparecer(Sprite obj, bool bueno, string nom, int din)
     {
+        gameObject.SetActive(true);
+        animator = gameObject.GetComponent<Animator>();
         nombre.text = nom;
         dinero.text = din.ToString();
 
@@ -33,14 +30,30 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
         objeto.sprite = obj;
         
-        animator.SetTrigger("Aparecer");
+        if( animator != null)
+        {
+            Debug.Log("funcionaaaaa");
+            animator.SetTrigger("Aparecer");
+
+        }
+        else
+        {
+            Debug.Log("No lo pilla");
+        }
+
     }
 
     public void Desaparecer()
     {
+        animator = gameObject.GetComponent<Animator>();
         animator.SetTrigger("Desaparecer");
-        //animator.Play("Oculto");<
-        cambio.CambiarDeEscenaLeche();
+        
+    }
+
+
+    public void CambiarEscena()
+    {
+       tanque.GetComponent<Tanque>().salir();
     }
 
     public void Reseteo()
