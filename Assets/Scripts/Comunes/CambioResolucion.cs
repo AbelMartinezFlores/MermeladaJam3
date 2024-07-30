@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,9 +26,10 @@ public class CambioResolucion : MonoBehaviour{
         foreach(Resolution resolucion in resoluciones){
 
             //Los que tengan 16:9 me los guardo
-            float ratio = resolucion.width / resolucion.height;
+            float ratio = (float)resolucion.width / (float)resolucion.height;
 
-            if(ratio == 16/9 && width != resolucion.width && resolucion.height != height){
+            //Aquí he hecho un corte a los digitos del flotante para que el error no haga falsa esta expresion siempre
+            if(Math.Round(ratio,3) == Math.Round((float)16/(float)9,3) && width != resolucion.width && resolucion.height != height){
                 opciones.Add(new OptionData(resolucion.width.ToString() + " x " + resolucion.height.ToString()));
                 if(resolucion.width == Screen.width && resolucion.height == Screen.height){
                     seleccionadoActual = i;
