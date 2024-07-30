@@ -53,6 +53,7 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
     public void CambiarEscena()
     {
+        Debug.Log("aaaaaaaaaa");
        tanque.GetComponent<Tanque>().salir();
     }
 

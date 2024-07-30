@@ -98,6 +98,7 @@ public class Tanque : MonoBehaviour
         lecheCubo.SetActive(false);
         final.SetActive (false);
         cambio.CambiarDeEscenaLeche();
+        Debug.Log("Buenas tardes");
     }
 }
 

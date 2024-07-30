@@ -58,6 +58,7 @@ public class CambiarEscena : MonoBehaviour{
         canvasOrdenyar.SetActive(false);
         canvasTeta.SetActive(false);
         vaca.comida.Clear();
+        Debug.Log("saludos");
     }
 
     private void MostrarError()
