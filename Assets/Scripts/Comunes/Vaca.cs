@@ -78,7 +78,7 @@ public class Vaca : MonoBehaviour
         {
             if (comida[i])
             {
-                Debug.Log("hola");
+                
                 bocadillo.transform.GetChild(i).gameObject.SetActive(true);
                 bocadillo.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = comida[i].sprite;
             }

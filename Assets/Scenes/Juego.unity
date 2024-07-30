@@ -10476,15 +10476,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvRelaciones: {fileID: 4900000, guid: b050471315439a3449a407b73bce9555, type: 3}
   combolist:
+  - {fileID: 11400000, guid: 632872935d258f8449c2739dbe69589c, type: 2}
+  - {fileID: 11400000, guid: efcd1d916a8ebc1439bf6e844ec6a8a1, type: 2}
   - {fileID: 11400000, guid: 09e814ff3775023498d0bd6e4b33fe43, type: 2}
   - {fileID: 11400000, guid: 469e7619886a8e64ebbd2587c57ccbaf, type: 2}
   - {fileID: 11400000, guid: 338335c9d30effb43ae0a833b22a6051, type: 2}
   - {fileID: 11400000, guid: fd3c20074e9a1704dbe0d619d4194547, type: 2}
-  - {fileID: 11400000, guid: fcbc341410355a9479e9b71922f4b60f, type: 2}
   - {fileID: 11400000, guid: b499ab8ab393517459fc03a1793499fb, type: 2}
+  - {fileID: 11400000, guid: fe317e057fcf3b84a96c777204cf55ec, type: 2}
   - {fileID: 11400000, guid: d429436da3697814dbc21444c1cd9cee, type: 2}
   - {fileID: 11400000, guid: 3c8279b8e11df03498e63994f784f9bd, type: 2}
   - {fileID: 11400000, guid: 67cd537960b39c04ca077982fc9123ee, type: 2}
+  - {fileID: 0}
   lecheMala: {fileID: 11400000, guid: fcbc341410355a9479e9b71922f4b60f, type: 2}
 --- !u!114 &1415863634
 MonoBehaviour:
@@ -13320,7 +13323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: 2.75}
+  m_AnchoredPosition: {x: -255.99994, y: 2.75}
   m_SizeDelta: {x: -661.03, y: -191.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800954085

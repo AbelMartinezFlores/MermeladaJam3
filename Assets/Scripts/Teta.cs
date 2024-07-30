@@ -169,9 +169,14 @@ public class Teta : MonoBehaviour
             {
                 if (combo.nIngredientes < 3)
                 {
+                    /*if(primero.nombre== segundo.nombre)
+                    {
+                        return lechenormal
+                    }*/
                     
                     if (primero.nombre == combo.ingrediente1.nombre || primero.nombre == combo.ingrediente2.nombre || primero.nombre == combo.ingrediente3.nombre)
                     {
+
                         if (segundo.nombre == combo.ingrediente1.nombre || segundo.nombre == combo.ingrediente2.nombre || segundo.nombre == combo.ingrediente3.nombre)
                         {
                             Debug.Log(combo.nombre);
