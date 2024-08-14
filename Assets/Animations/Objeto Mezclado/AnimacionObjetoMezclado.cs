@@ -26,6 +26,7 @@ public class AnimacionObjetoMezclado : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         nombre.text = nom;
         dinero.text = din.ToString();
+        vaca.SumarDinero(din);
 
         if(bueno) fondo.sprite = buenaMezcla;
         else fondo.sprite = malaMezcla;

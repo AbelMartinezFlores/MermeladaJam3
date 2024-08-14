@@ -86,7 +86,7 @@ public class Tanque : MonoBehaviour
             diner.text = dinero.ToString();*/
 
             //final.SetActive(true);
-
+            
             //final.Aparecer(leche.sprite,buena,leche.nombre,dinero);
             final.GetComponent<AnimacionObjetoMezclado>().Aparecer(leche.sprite, buena, leche.nombre, dinero);
         }
