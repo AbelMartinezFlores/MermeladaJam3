@@ -18,7 +18,8 @@ public class Ubre : MonoBehaviour
     {
         GenerarUbre();
     }
-    void OnAwake() {
+
+    void OnEnable() {
         //dispensador = transform.Find("Emisor").GetComponent<ParticleSystem>();
         dispensador.startColor = deposito.colorDeLeche();
     }
