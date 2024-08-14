@@ -71,10 +71,14 @@ public class Tanque : MonoBehaviour
                 case 1:
                     dinero += leche.ingrediente1.valor;
                     break;
+                case 0:
+                    dinero += 25;
+                    break;
             }
-
-            dinero *= leche.nIngredientes;
-
+            if (leche.nIngredientes != 0)
+            {
+                dinero *= leche.nIngredientes;
+            }
 
             /*
             if (buena) fondo.sprite = buenaMezcla;
@@ -86,7 +90,7 @@ public class Tanque : MonoBehaviour
             diner.text = dinero.ToString();*/
 
             //final.SetActive(true);
-            
+
             //final.Aparecer(leche.sprite,buena,leche.nombre,dinero);
             final.GetComponent<AnimacionObjetoMezclado>().Aparecer(leche.sprite, buena, leche.nombre, dinero);
         }
