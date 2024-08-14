@@ -11,4 +11,9 @@ public class SalirCreditos : MonoBehaviour{
             SceneManager.LoadScene(numeroEscenaMenuPrincipal);
         }
     }
+
+    public void IrMenuPrincipal()
+    {
+        SceneManager.LoadScene(numeroEscenaMenuPrincipal);
+    }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AnimacionObjetoMezclado : MonoBehaviour
@@ -17,6 +18,7 @@ public class AnimacionObjetoMezclado : MonoBehaviour
     [SerializeField] public CambiarEscena cambio;
 
     [SerializeField] private GameObject tanque;
+    [SerializeField] private Vaca vaca;
 
     public void Aparecer(Sprite obj, bool bueno, string nom, int din)
     {
@@ -53,8 +55,8 @@ public class AnimacionObjetoMezclado : MonoBehaviour
 
     public void CambiarEscena()
     {
-        Debug.Log("aaaaaaaaaa");
-       tanque.GetComponent<Tanque>().salir();
+        if (vaca.getGanado()) SceneManager.LoadScene(3);
+        else tanque.GetComponent<Tanque>().salir();
     }
 
     public void Reseteo()
