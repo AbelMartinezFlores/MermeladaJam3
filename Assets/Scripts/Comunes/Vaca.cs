@@ -19,22 +19,19 @@ public class Vaca : MonoBehaviour
 
     private int dinero = 100;
     private bool ganado = false;
-    private bool mostrarPanelFinal = false;
 
     [SerializeField] public Text textoDinero;
     [SerializeField] public Image cuerpoVaca;
     [SerializeField] public Image fondoVaca;
     [SerializeField] public List<Sprite> cuerpos;
     [SerializeField] public List<Sprite> fondos;
-    [SerializeField] private GameObject panelVictoria;
-
 
     private void Start()
     {
         textoDinero.text = dinero.ToString();
         tet = GetComponent<Teta>();
         tet.leerCombinaciones();
-
+        ganado = false;
         verComida();
     }
     
@@ -145,12 +142,11 @@ public class Vaca : MonoBehaviour
             // SceneManager.LoadScene(2); //2 es escena orde�ar
         }
 
+    }
 
-        if( mostrarPanelFinal == false && ganado == true)
-        {
-            panelVictoria.SetActive(true);
-        }
-
+    public bool getGanado()
+    {
+        return ganado;
     }
 
     //Devuelve las combinaciones desbloqueadas
@@ -189,8 +185,7 @@ public class Vaca : MonoBehaviour
             }
 
         }
-        if (lotengo == false)
-            combinacionesDesbloqueadas.Add(lecheResultado);
+        if (lotengo == false) AnyadirCombinaciones(lecheResultado);
 
         cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
         fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];

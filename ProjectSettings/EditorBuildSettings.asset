@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Juego.unity
     guid: 2ad420877b3cb5244bab98c3254ed3dc
-  - enabled: 0
-    path: Assets/Scenes/Ordenyar.unity
-    guid: e250659086a6daf44bf098c9e02c073d
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: b9dd3d4710f87bb4e964065dfc5fd40c
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: 2cae98ba2fd36a24ab0e65c968eb9358
   m_configObjects: {}
