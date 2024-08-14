@@ -135,6 +135,8 @@ public class Vaca : MonoBehaviour
             if (lotengo == false)
                 combinacionesDesbloqueadas.Add(lecheResultado);
 
+         
+
             cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
             fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
             // SceneManager.LoadScene(2); //2 es escena orde�ar
@@ -187,6 +189,14 @@ public class Vaca : MonoBehaviour
 
         cuerpoVaca.sprite = cuerpos[combinacionesDesbloqueadas.Count / 4];
         fondoVaca.sprite = fondos[combinacionesDesbloqueadas.Count / 4];
+
+        if(combinacionesDesbloqueadas.Count/4 >= 2)
+        {
+
+            cuerpo.GetComponent<RectTransform>().sizeDelta = new Vector2(cuerpo.GetComponent<RectTransform>().sizeDelta.x, 1090);
+            cuerpo.GetComponent<RectTransform>().localPosition = new Vector3(0, 126.76f,0);
+        }
+
     }
 
 }
