@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
-  m_Name: Guindilla-Plutonio-238
+  m_Name: 0-Leche_Agria
   m_EditorClassIdentifier: 
-  nombre: Fuego Vacuno
-  nIngredientes: 2
-  ingrediente1: {fileID: 11400000, guid: f87aca4450f20d844881a0debba20338, type: 2}
-  ingrediente2: {fileID: 11400000, guid: 187c8a857b406f140807f489be91f53d, type: 2}
+  nombre: Leche agria
+  nIngredientes: 0
+  ingrediente1: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
+  ingrediente2: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
   ingrediente3: {fileID: 11400000, guid: 98043678712f90d40bee14f8127254cb, type: 2}
-  descripcion: Puedes beberlo o usarlo para volar un castillo
-  pista: Quema todo lo que toca
-  sprite: {fileID: 21300000, guid: d881309750c2271479b70e8ac08afc8e, type: 3}
+  descripcion: Leche agria
+  pista: "No le sent\xF3 bien a la vaca"
+  sprite: {fileID: 21300000, guid: a37211d83cf21dd48bbba966e0de1d22, type: 3}
   spriteBlocked: {fileID: 0}
-  color: {r: 0.735849, g: 0.19407244, b: 0.017354928, a: 1}
+  color: {r: 0.14978641, g: 0.20754719, b: 0.16240525, a: 1}

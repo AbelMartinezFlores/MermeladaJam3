@@ -14,6 +14,7 @@ public class RellenarInformacion : MonoBehaviour{
     public GameObject vacaInvisible;
     public GameObject panelDescripcion;
     public GameObject panelPista;
+    public ScriptableObject objetoVacio;
 
     //Aquí se implementa la lógica de cuando le das click a un ingrediente rellenando el menu de la derecha de la enciclopedia
     public void SeleccionarIngrediente(){
@@ -65,7 +66,16 @@ public class RellenarInformacion : MonoBehaviour{
                     nombreCombinacionSeleccioando.text = combinaciones[i].nombre;
                     nombreIngrediente1.text = combinaciones[i].ingrediente1.nombre;
                     nombreIngrediente2.text = combinaciones[i].ingrediente2.nombre;
-                    nombreIngrediente3.text = combinaciones[i].ingrediente3.nombre;
+
+                    if (combinaciones[i].ingrediente3 != objetoVacio)
+                    {
+                        nombreIngrediente3.text = combinaciones[i].ingrediente3.nombre;
+                    }
+                    else
+                    {
+                        nombreIngrediente3.text = "";
+                    }
+                        
 
                     //Activamos el panel informacion
                     panelDescripcion.SetActive(true);
