@@ -32,6 +32,7 @@ public class Tienda : MonoBehaviour
         gameObject.SetActive(true);
         GameObject ingrediente_sel = gameObject.transform.Find("IngredienteSeleccionado").gameObject;
         ingrediente_sel.SetActive(false);
+        actualizarTienda();
     }
 
     public void comprarIngrediente(Ingrediente ingrediente, int nivel)
