@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: Trigo-Melon-Jamon
   m_EditorClassIdentifier: 
-  nombre: Desayuno campeon
+  nombre: Desayuno de los campeones
   nIngredientes: 3
   ingrediente1: {fileID: 11400000, guid: 77cc284170b68af41bc8636c2a3ac10a, type: 2}
   ingrediente2: {fileID: 11400000, guid: 45be2ccaa6eb82649bc0b8b7b58f86f3, type: 2}
