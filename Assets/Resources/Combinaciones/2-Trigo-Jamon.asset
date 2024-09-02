@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b8da1c52cbcf4ab077768e73b7308, type: 3}
   m_Name: 2-Trigo-Jamon
   m_EditorClassIdentifier: 
-  nombre: Batido de bocadillo
+  nombre: Bocata batido
   nIngredientes: 2
   ingrediente1: {fileID: 11400000, guid: 77cc284170b68af41bc8636c2a3ac10a, type: 2}
   ingrediente2: {fileID: 11400000, guid: f2e9ffa060f08cb4baa4e6ed2068ee6f, type: 2}
